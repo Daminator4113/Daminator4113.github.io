@@ -1,0 +1,734 @@
+/*-------------------------
+    GLOBAL
+---------------------------*/
+body {
+    font-family: Rubik, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ECECEC;
+    background: #171717;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #171717;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(23, 23, 23, 0.9);
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #aaa;
+}
+a:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #B4B4B4;
+    font-weight: bold;
+}
+
+nav li {
+    transition: filter 0.3s ease ,transform 0.3s ease;
+}
+nav li:hover {
+    transform: translateY(3px);
+    filter: brightness(1.2);
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0; /* Initial state: invisible */
+    transform: translateY(50px); /* Décalage vertical initial */
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0); /* Ramène à la position initiale */
+}
+
+.section h1 {
+    font-family: Power Clear, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    color: #6444E3;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    color: #FFF;
+    margin-bottom: 15px;
+    /*margin-top: 100px;*/
+}
+
+.container {
+    max-width: 1200px;
+    /*margin: auto;*/
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    width: 90%;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: ##B4B4B4;
+    margin: 10px auto;
+}
+
+.container .description {
+    width: 55%;
+}
+
+.container button {
+    background: rgba(0, 0, 0, 0.0);
+    width: auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.container button:hover {
+    background: #333;
+}
+
+.bg-color {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 100px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+}
+
+.copyright {
+    background-color: #171717;
+    color: #ECECEC;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.7em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*-------------------------
+    IMAGES
+---------------------------*/
+iframe {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 10px 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    transition: transform 0.5s ease;
+}
+
+.pp {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-group {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante lorsque la largeur est insuffisante */
+    justify-content: center;
+    gap: 10px; /* Espacement entre les images */
+    margin: 20px;
+    align-items: center; /* Aligne les images au centre de chaque tile*/
+}
+
+.image-group img {
+    flex: 0 1 calc(25% - 10px); /* Chaque image occupe 25% de la largeur moins l'espacement */
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Maintient le ratio sans déformation */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-group img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-group-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Préserve le ratio sans déformer */
+    aspect-ratio: attr(width) / attr(height); /* Maintient le ratio si pris en charge */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.5s, transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px; /* Limite la taille des miniatures */
+    max-height: 300px; /* Limite la taille des miniatures */
+    transform: translateX(0);
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles responsives pour ajuster le nombre de colonnes selon la largeur de l'écran */
+@media (max-width: 768px) {
+    .image-group {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour écrans moyens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-group {
+        grid-template-columns: 1fr; /* 1 colonne pour petits écrans */
+    }
+}
+
+/* Conteneur de la lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    display: none; /* Masqué par défaut */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Image agrandie */
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.0);
+}
+
+
+/* Boutons de navigation */
+.lightbox .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.lightbox .prev {
+    left: 20px;
+}
+
+.lightbox .next {
+    right: 20px;
+}
+
+/* Bouton de fermeture */
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.manual-resize {
+    display: block; /* S'assure que l'image occupe une ligne entière */
+    margin: 20px auto; /* Centre l'image */
+    height: auto; /* Conserve le ratio */
+    max-width: 100%; /* Empêche de dépasser la largeur du conteneur parent */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+/*-------------------------
+    ANIMATIONS
+---------------------------*/
+.image.animate-left {
+    animation: fade-in-left 0.8s ease forwards;
+}
+
+.image.animate-right {
+    animation: fade-in-right 0.8s ease forwards;
+}
+
+.image.animate-bottom {
+    animation: fade-in-bottom 0.8s ease forwards;
+}
+
+/* Anime les images pour avoir un déplacement à gauche / droite / bottom */
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.anim{
+    margin: 0 auto; /* Centre l'image */
+    animation: subtle-glow 5s ease-in-out infinite; /* Animation continue */
+    transition: transform 0.3s ease; /* Effet de douceur */
+}
+
+/* Animation de flottement */
+@keyframes ghost-float {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Animation de rotation subtile */
+@keyframes subtle-rotate {
+    0% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+
+/* Animation de clignotement subtil */
+@keyframes subtle-glow {
+    0% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.5);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+
+
+
+/*-------------------------
+    PROJECTS SECTION
+---------------------------*/
+#projects {
+    background: #2F2F2F;
+}
+
+#projects-pro {
+    background: #212121;
+}
+
+#projects p {
+    line-height: 1.5;
+}
+
+#projects i {
+    font-size: 0.9em;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+/* Alternance des styles pour les projets pairs */
+.project:nth-child(even) {
+    flex-direction: row-reverse; /* Inversion de l'ordre */
+}
+
+/* Style par défaut : image à gauche, texte à droite */
+.project img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* disposition de l'image en arrière plan */
+.bg-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden; /* Empêche les débordements dus à la parallaxe */
+    z-index: -1; /* derrière le contenu */
+    justify-content: center;
+    background: #000;
+}
+
+/* image en arrière-plan */
+.background-image {
+    /*width: 100%; /* Dépasse légèrement pour le décalage parallaxe */
+    height: 1000px; /* Même chose pour la hauteur */
+    object-fit: cover; /* Remplit l'espace sans déformer */
+    transform: translate(40%, -10%); /* Point de départ pour l'animation parallaxe */
+    transition: transform 0.05s ease-out; /* Adoucit les mouvements */
+}
+
+/* Overlay pour le flou */
+.bg-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Effet de flou */
+    background: rgba(33, 33, 33, 0.25); /* Couche semi-transparente pour renforcer la lisibilité */
+    z-index: -1; /* Devant l'image mais derrière le reste du contenu */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* disposition du top title sur la 1ère page */
+.top-title {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.toggle-details {
+    display: block;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-details:hover {
+    background-color: #005fa3;
+}
+
+.details {
+    height: 0; /* La section est initialement masquée */
+    overflow: hidden; /* Cache le contenu déplié lorsqu'il est fermé */
+    transition: height 0.5s ease, opacity 0.5s ease; /* Transition fluide pour la hauteur et l'opacité */
+    opacity: 0; /* Rend la section invisible lorsqu'elle est fermée */
+}
+
+.details.open {
+    height: auto; /* S'ajuste automatiquement à la hauteur du contenu */
+    opacity: 1; /* Restaure la visibilité */
+}
+
+
+
+
+/*-------------------------
+    CREATIONS SECTION
+---------------------------*/
+#creations {
+    background: #2F2F2F;
+}
+
+#creations p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #B4B4B4;
+    padding-bottom: 20px;
+}
+
+.creation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+/*-------------------------
+    PROFIL SECTION
+---------------------------*/
+#profil {
+    background: #212121;
+}
+
+.profile-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Empêche les débordements dus à la parallaxe */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Vidéo en arrière-plan */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%; /* Dépasse légèrement pour le décalage parallaxe */
+    height: 110%; /* Même chose pour la hauteur */
+    object-fit: cover; /* Remplit l'espace sans déformer */
+    transform: translate(0, 0); /* Point de départ pour l'animation parallaxe */
+    transition: transform 0.05s ease-out; /* Adoucit les mouvements */
+    z-index: -1;
+}
+
+/* Overlay pour le flou */
+.profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Effet de flou */
+    background: rgba(33, 33, 33, 0.5); /* Couche semi-transparente pour renforcer la lisibilité */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Devant la vidéo */
+}
+
+/* Conteneur principal */
+.profile-container {
+    display: flex;
+    max-width: 1200px; /* Largeur maximale de la section */
+    width: 100%;
+    gap: 20px; /* Espacement entre l'image et le contenu */
+    align-items: center;
+}
+
+.profile-content {
+    padding: 20px;
+    flex: 0.75; /* Prend tout l'espace disponible */
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify; /* Justify → Aligne le texte pour remplir le cadre */
+    text-shadow: 0px 0px 50px rgba(0, 0, 0, 1); /* Ombre du texte */
+}
+
+.profile-content p {
+    width: 100%;
+    font-size: 1.0em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* footer pour les liens en bas de section */
+nav.footer ul{
+    justify-content: center;
+}
+nav.footer ul li{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.2em;
+}
+
+
+
+
+/*-------------------------
+    FORMATION SECTION
+---------------------------*/
+#formation {
+    background: #2F2F2F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formation-links {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+#formation h2 {
+    font-size: 2em;
+}
+
+#formation p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #B4B4B4;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #171717;
+    color: #B4B4B4;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-link {
+    padding: 12px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-link:hover {
+    background-color: #005fa3;
+    transform: translateY(-3px);
+}
+
+.btn-anim{
+    margin: 0 auto; /* Centre l'image */
+    animation: subtle-rotate 5s ease-in-out infinite; /* Animation continue */
+}
+
+/*---
+Special styles for websites
+---*/
+.oc {
+    background-color: #3e5b98;
+}
+.oc:hover {
+    background-color: #2d4371;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+.youtube:hover {
+    background-color: #cc0000;
+}
+
+.gamejolt {
+    background-color: #CCFF00;
+    color: #111;
+}
+.gamejolt:hover {
+    background-color: #9CC400;
+}
+
+.artstation {
+    padding: 5px;
+    background-color: #13AFF0;
+    color: #fff;
+}
+.artstation:hover {
+    background-color: #0C86BA;
+}
