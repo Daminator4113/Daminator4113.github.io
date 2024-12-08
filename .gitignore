@@ -1,6 +1,14 @@
+#images avec url
+images/projects/find_the_button/level12.png
+images/projects/find_the_button/Level13.png
+images/projects/find_the_button/Level14.png
+images/projects/find_the_button/pipes.gif
+images/projects/find_the_button/temple.gif
+
 # Unused
 *.url
 *.mp4
 test/*
 organisation.txt
+glitched_maze.txt
 cv.pdf

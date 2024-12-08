@@ -475,6 +475,17 @@ img {
     border-radius: 10px;
 }
 
+#mes-jeux .project {
+    flex-direction: column;
+    gap: 0px;
+}
+.project-intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
 /* disposition de l'image en arrière plan */
 .bg-img-container {
     position: absolute;

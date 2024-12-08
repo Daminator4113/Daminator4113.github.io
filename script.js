@@ -251,4 +251,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+
+    //------------------------------------------------------//
+    //   AJOUTE DE L'ESPACE ENTRE LES PROJETS
+    //------------------------------------------------------//
+    // Sélectionne uniquement les éléments ".project" dans la section "#projects"
+    const project_sections = ['#gamejam', '#mes-jeux']; // Liste des sections à traiter
+    const offset = 100; // Taille de l'espace entre chaque projet
+
+    // Fonction réutilisable pour appliquer le style aux projets d'une section
+    const styleProjects = (sectionSelector) => {
+        const projects = document.querySelectorAll(`${sectionSelector} .project`);
+
+        projects.forEach((project, index) => {
+            const previous = projects[index - 1];
+            const next = projects[index + 1];
+
+            if (previous && previous.classList.contains('project') &&
+                next && next.classList.contains('project')) {
+                // Si entouré par deux autres projets
+                project.style.margin = `${offset}px 0`;
+            } else if (!previous && !next) {
+            } else if (!previous) {
+                // Si c'est le premier projet
+                project.style.margin = `20px 0 ${offset}px 0`;
+            } else if (!next) {
+                // Si c'est le dernier projet
+                project.style.margin = `${offset}px 0 20px 0`;
+            }
+        });
+    };
+
+    // Applique le style à chaque section spécifiée
+    project_sections.forEach(section => styleProjects(section));
+
+
+
+    //------------------------------------------------------//
+    //   INVERSE CHAQUE PROJET EN LIGNE DANS MES JEUX
+    //------------------------------------------------------//
+    const projectIntros = document.querySelectorAll('.project .project-intro');
+
+    projectIntros.forEach((intro, index) => {
+        // Alterne entre "row" et "row-reverse"
+        const flexDirection = index % 2 === 0 ? 'row' : 'row-reverse';
+        intro.style.display = 'flex';
+        intro.style.flexDirection = flexDirection;
+    });
+
 });
