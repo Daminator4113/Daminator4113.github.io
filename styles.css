@@ -471,7 +471,7 @@ img {
 
 /* Style par défaut : image à gauche, texte à droite */
 .project img {
-    width: 40%;
+    /*width: 40%;*/
     border-radius: 10px;
 }
 
