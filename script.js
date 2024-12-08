@@ -17,17 +17,30 @@ document.addEventListener('DOMContentLoaded', () => {
     //------------------------------------------------------//
     const sections = document.querySelectorAll('.section');
 
-    // Assurez que la première section est visible au chargement
-    sections[0].style.opacity = '1';
-    sections[0].style.transform = 'translateY(0)';
+    // Fonction pour rendre une section visible
+    const makeVisible = (section) => {
+        section.style.opacity = '1';
+        section.style.transform = 'translateY(0)';
+    }
 
     // Initialisation : les autres sections démarrent invisibles
     sections.forEach((section, index) => {
-        if (index > 0) {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(50px)';
-        }
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(50px)';
         section.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+    });
+    
+    // Assurez que la première section est visible au chargement
+    //makeVisible(sections[0])
+    // Assurez que la section visible au chargement est affichée
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const sectionMiddle = rect.top; // Centre de la section
+        const windowMiddle = window.innerHeight / 2; // Centre de la fenêtre
+
+        if (sectionMiddle >= 0 && sectionMiddle <= window.innerHeight) {
+            makeVisible(section); // La section visible est rendue immédiatement visible
+        }
     });
 
     // Écouteur pour détecter le scroll
@@ -38,9 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const top = section.getBoundingClientRect().top;
 
             if (top < triggerHeight) {
-                // Ajoute les styles pour rendre visible
-                section.style.opacity = '1';
-                section.style.transform = 'translateY(0)';
+                makeVisible(section)
             }
         });
     });
