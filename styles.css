@@ -115,7 +115,7 @@ h3 {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 80%;
     /*margin: auto;*/
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -307,6 +307,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
+    justify-items: center;
     align-items: center;
     gap: 20px;
     margin: 20px;
@@ -550,6 +551,10 @@ img {
     flex-direction: column;
     gap: 0px;
 }
+#gamejam .project {
+    flex-direction: column;
+    gap: 0px;
+}
 .project-intro{
     display: flex;
     align-items: center;
@@ -625,6 +630,11 @@ img {
     overflow: hidden; /* Cache le contenu déplié lorsqu'il est fermé */
     transition: height 0.5s ease, opacity 0.5s ease; /* Transition fluide pour la hauteur et l'opacité */
     opacity: 0; /* Rend la section invisible lorsqu'elle est fermée */
+}
+
+.details p {
+    text-align: center;
+    width: 80%;
 }
 
 .details.open {

@@ -5,7 +5,7 @@ function removeClassAfterDelay(element, className, delay) {
         // Enlève la classe après le délai spécifié
         setTimeout(() => {
             element.classList.remove(className);
-            console.log(`Classe "${className}" retirée de l'élément.`);
+            //console.log(`Classe "${className}" retirée de "${element}".`);
         }, delay);
     }
 }
@@ -13,7 +13,7 @@ function removeClassAfterDelay(element, className, delay) {
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
     //------------------------------------------------------//
-    //   ANIMATION+APPARITION DES SECTIONS LORS DU SCROLL
+    //   ANIMATION + APPARITION DES SECTIONS LORS DU SCROLL
     //------------------------------------------------------//
     const sections = document.querySelectorAll('.section');
 
@@ -29,21 +29,23 @@ document.addEventListener('DOMContentLoaded', () => {
         section.style.transform = 'translateY(50px)';
         section.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
     });
-    
-    // Assurez que la première section est visible au chargement
-    //makeVisible(sections[0])
-    // Assurez que la section visible au chargement est affichée
-    sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        const sectionMiddle = rect.top; // Centre de la section
-        const windowMiddle = window.innerHeight / 2; // Centre de la fenêtre
 
-        if (sectionMiddle >= 0 && sectionMiddle <= window.innerHeight) {
-            makeVisible(section); // La section visible est rendue immédiatement visible
-        }
+    // Assurez que les sections visibles au chargement soient affichées
+    const section_observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const section = entry.target;
+                makeVisible(section);
+                // Stop observing une fois que la section a été animée
+                section_observer.unobserve(section);
+            }
+        });
     });
+    
+    // Observe chaque section
+    sections.forEach((section) => section_observer.observe(section))
 
-    // Écouteur pour détecter le scroll
+    // On détecte le scroll
     document.addEventListener('scroll', () => {
         const triggerHeight = window.innerHeight / 1.3;
 
@@ -146,10 +148,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // Après 1s on enlève la class .image pour pouvoir appliquer des transform
-                removeClassAfterDelay(img, 'image', 1000);
+                //removeClassAfterDelay(img, 'image', 1000);
+                // Après 1s on enlève les class animate pour pouvoir appliquer des transform ET pouvoir rejouer les animations
+                removeClassAfterDelay(img, 'animate-left', 1000);
+                removeClassAfterDelay(img, 'animate-right', 1000);
+                removeClassAfterDelay(img, 'animate-bottom', 1000);
 
                 // Stop observing une fois que l'image a été animée
-                observer.unobserve(img);
+                //observer.unobserve(img);
             }
         });
     });
@@ -215,8 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetSection) {
                 const isNavLink = link.closest('header nav'); // Vérifie si c'est un lien du header
                 const isDropdownLink = link.closest('.dropdown'); // Vérifie si c'est un lien du dropdown
-
-                console.log(isNavLink,isDropdownLink,link)
                 
                 if (isNavLink && isDropdownLink === null) {
                     // Défilement avec position en haut pour les boutons du header

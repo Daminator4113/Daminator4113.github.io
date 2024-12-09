@@ -87,19 +87,20 @@
                                 </p>
                             </div>
                         </div>
-
+                        <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                            <p style="text-align: justify; width: 75%;">
+                            <p style="text-align: justify;">
                                 <i><i style="font-size: 1.8em;">“</i>J'ai commencé le dev de ce jeu en même temps que j'ai commencé à apprendre à utiliser Unreal en total autodidacte, il ma servi de support d'apprentissage, et je ne voulais pas entamer un projet que je n'étais pas sûr d'aboutir. Donc et j'ai eu l'idée du "Find The Button" (en référence à un type de map sur Minecraft :D), qui était un concept assez simple à mettre en place mais qui m'a quand même permis d'explorer plein de facettes d'Unreal et du dev de jeu en général.
                                 <br><br>
                                 Initialement je n'étais pas sûr de vouloir le publier étant donné qu'il a souffert de toutes les erreurs que j'ai pu commettre au cours de mon apprentissage sur Unreal, toutefois j'aime bien ce que j'ai finis par en faire, et je me dit que ça peut potentiellement intéresser des gens. Il doit y avoir quelques bugs par-ci par-là, et certains niveaux souffrent de quelque problèmes d'optimisations, mais je n'ai pas souhaité continuer ce projet et j'ai préfèré le sortir tel-quel avec ses défauts, plutôt que de ne pas le sortir du tout.<i style="font-size: 1.8em;">”</i></i>
                             </p>
                         </div>
-                        
+                        <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7w2tnUAuLQc?si=j6rJ9-tF6uplA-a_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe class="image left" width="560" height="315" src="https://www.youtube.com/embed/7w2tnUAuLQc?si=j6rJ9-tF6uplA-a_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="youtube video"></iframe>
+                            <iframe class="image right" width="560" height="315" src="https://www.youtube.com/embed/c08mF457Oic?si=z6rgm4SEbGlMjIzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="youtube video"></iframe>
 
                             <div class="creation">
                                 <!-- Groupe d'images organisé en tiles -->
@@ -120,7 +121,6 @@
                         </div>
                     </div>
 
-                    <!-- WIP -->
                 </div>
 
                 <!-- GameJam -->
@@ -128,64 +128,152 @@
                     <h2>GameJAM</h2>
                     <!-- Tourment -->
                     <div id="Tourment" class="project">
-                        <div class="description">
-                            <p>
-                                <a href="https://gamejolt.com/games/tourment/701553" target="_blank" class="btn-link btn-anim gamejolt">▶ Tourment</a>
-                                <br><br>
-                                Ce projet fait partie de la série des "Up Your Skills Challenges" proposé par la chaine de <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>.
-                                <br><br>
-                                Et pour ce challenge, on disposait de 15 jours pour proposer un projet qui s'inscrivait dans ce thème : <a href="https://www.twitch.tv/videos/1419815023" target="_blank">"Créer un passage de l'Angoisse"</a>.
-                                <br><br>
-                                Tout les projets ont ensuite été testé directement en live, le miens également : <a href="https://youtu.be/_zgMaUp5L7I?t=2482" target="_blank">VOD du test</a>. <i>(Je vous conseils de le tester par vous-même avant !)</i>
-                                <br><br>
-                                N'hésitez pas à allez jeter un œil à la page <a href="https://daminator4113.artstation.com/albums/5755783" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a> du projet.
-                            </p>
+                        <div class="project-intro">
+                            <div class="description">
+                                <p>
+                                    <a href="https://gamejolt.com/games/tourment/701553" target="_blank" class="btn-link btn-anim gamejolt">▶ Tourment</a>
+                                    <br><br>
+                                    Ce projet fait partie de la série des "Up Your Skills Challenges" proposé par la chaine de <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>.
+                                    <br><br>
+                                    Et pour ce challenge, on disposait de 15 jours pour proposer un projet qui s'inscrivait dans ce thème : <a href="https://www.twitch.tv/videos/1419815023" target="_blank">"Créer un passage de l'Angoisse"</a>.
+                                    <br><br>
+                                    Tout les projets ont ensuite été testé directement en live, le miens également : <a href="https://youtu.be/_zgMaUp5L7I?t=2482" target="_blank">VOD du test</a>. <i>(Je vous conseils de le tester par vous-même avant !)</i>
+                                    <br><br>
+                                    N'hésitez pas à allez jeter un œil à la page <a href="https://daminator4113.artstation.com/albums/5755783" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a> du projet.
+                                </p>
+                            </div>
+                            <img src="images/projects/tourment/tourment_thumbnail.png" alt="tourment thumbnail" data-width="35" class="img manual-resize image right">
                         </div>
-                        <img src="images/projects/tourment/tourment_thumbnail.png" alt="tourment thumbnail" data-width="35" class="img manual-resize image right">
+                        <!-- En savoir plus
+                        <button class="toggle-details">→ En savoir plus ←</button>
+                        <div class="details">
+                                <p>
+                                    Bla Bla Bla
+                                </p>
+                        </div>
+                         -->
+                        <!-- Galerie -->
+                        <button class="toggle-details">→ Galerie ←</button>
+                        <div class="details">
+                            <div class="creation">
+
+                                <iframe class="image bottom" width="720" height="480" src="https://www.youtube.com/embed/eIMVAcMeVVI?si=eAOmHFxkwIgC9LP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="youtube video"></iframe>
+                                <!-- Groupe d'images organisé en lignes -->
+                                <div class="image-group-row">
+                                    <img src="https://cdnb.artstation.com/p/assets/images/images/047/572/215/large/daminator-4113-highresscreenshot00000.jpg?1647922529" alt="screenshot 1" data-width="100" class="img manual-resize image left" data-group="1">
+                                    <img src="https://cdnb.artstation.com/p/assets/images/images/047/572/635/large/daminator-4113-screenshot005.jpg?1647923880" alt="screenshot 2" data-width="100" class="img manual-resize image right" data-group="1">
+                                </div>
+                                <img src="https://cdnb.artstation.com/p/assets/images/images/047/572/457/large/daminator-4113-standing.jpg?1647923451" alt="standing" data-width="25" class="img manual-resize image bottom" data-group="1">
+                            </div>
+                            <p>Pour plus de visuels, je vous invite à visiter la page <a href="https://daminator4113.artstation.com/albums/5755783" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a> du projet.</p>
+                        </div>
                     </div>
 
                     <!-- LD56 -->
                     <div id="LD56" class="project">
-                        <div class="description">
+                        <div class="project-intro">
+                            <div class="description">
+                                <p>
+                                    <a href="https://ldjam.com/events/ludum-dare/56/untitle-yes-is-the-real-title" target="_blank" class="btn-link btn-anim gamejolt">▶ Ludum Dare 56 | Untitled (yes it's the real title)</a>
+                                    <br><br>
+                                    Ce projet fait partie de la 56ème édition des <a href="https://ldjam.com/events/ludum-dare/56" target="_blank">Ludum Dare</a>.
+                                    <br><br>
+                                    Et pour ce challenge, on disposait de 72 heures pour proposer un projet qui s'inscrivait dans ce thème : <a href="https://ldjam.com/events/ludum-dare/56/results" target="_blank">"Tiny Creatures"</a>.
+                                    <br><br>
+                                    Nous étions 5 sur ce projet, et je me suis principalement occupé du design et la production des dessins.
+                                </p>
+                            </div>
+                            <img src="images/projects/ludumdare56/ludumdare56_thumbnail.png" alt="ludumdare56 thumbnail" data-width="25" class="img manual-resize image left">
+                        </div>
+                        <!-- En savoir plus
+                        <button class="toggle-details">→ En savoir plus ←</button>
+                        <div class="details">
                             <p>
-                                <a href="https://ldjam.com/events/ludum-dare/56/untitle-yes-is-the-real-title" target="_blank" class="btn-link btn-anim gamejolt">▶ Ludum Dare 56 | Untitled (yes it's the real title)</a>
-                                <br><br>
-                                Ce projet fait partie de la 56ème édition des <a href="https://ldjam.com/events/ludum-dare/56" target="_blank">Ludum Dare</a>.
-                                <br><br>
-                                Et pour ce challenge, on disposait de 72 heures pour proposer un projet qui s'inscrivait dans ce thème : <a href="https://ldjam.com/events/ludum-dare/56/results" target="_blank">"Tiny Creatures"</a>.
-                                <br><br>
-                                Nous étions 4 sur ce projet, et je me suis principalement occupé du design et la production des dessins.
+                                Bla Bla Bla
                             </p>
                         </div>
-                        <img src="images/projects/ludumdare56/ludumdare56_thumbnail.png" alt="ludumdare56 thumbnail" data-width="25" class="img manual-resize image left">
+                         -->
+                        <!-- Galerie -->
+                        <button class="toggle-details">→ Galerie ←</button>
+                        <div class="details">
+                            <div class="creation">
+                                <img src="images/projects/ludumdare56/main_menu.png" alt="template3" data-width="50" class="img manual-resize image bottom" data-group="1">
+                                <div class="image-group image bottom">
+                                    <img src="images/projects/ludumdare56/lightbulb_awake_01.png" alt="template1" class="img thumbnail image left" data-group="1">
+                                    <img src="images/projects/ludumdare56/mouse_awake_02.png" alt="template2" class="img thumbnail image right" data-group="1">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- GlitchedMaze -->
                     <div id="GlitchedMaze" class="project">
-                        <div class="description">
+                        <div class="project-intro">
+                            <div class="description">
+                                <p>
+                                    <a href="https://www.mediafire.com/file/i712wf4k03st1zz/SpeedyMaze.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ GlitchedMaze</a>
+                                    <br><br>
+                                    Ce projet à été réalisé à l'occasion d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, avec un délai de 1 mois, où le but était de faire un <b>Labyrinthe</b> en ajoutant des mécaniques original pour complexifier le tout.
+                                    <br><br>
+                                    <a href="https://youtu.be/U3wnYTDof6Y?si=JN2bu20ULlhXv_kt&t=95" target="_blank">Annonce du concours</a>
+                                </p>
+                            </div>
+                            <img src="images/projects/glitched_maze/glitched_maze_thumbnail.png" alt="GlitchedMaze thumbnail" data-width="20" class="img manual-resize image right">
+                        </div>
+                        <!-- En savoir plus
+                        <button class="toggle-details">→ En savoir plus ←</button>
+                        <div class="details">
                             <p>
-                                <a href="https://www.mediafire.com/file/i712wf4k03st1zz/SpeedyMaze.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ GlitchedMaze</a>
-                                <br><br>
-                                Ce projet à été réalisé à l'occasion d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, avec un délai de 1 mois, où le but était de faire un <b>Labyrinthe</b> en ajoutant des mécaniques original pour complexifier le tout.
-                                <br><br>
-                                <a href="https://youtu.be/U3wnYTDof6Y?si=JN2bu20ULlhXv_kt&t=95" target="_blank">Annonce du concours</a>
+                                Bla Bla Bla
                             </p>
                         </div>
-                        <img src="images/projects/glitched_maze/glitched_maze_thumbnail.png" alt="GlitchedMaze thumbnail" data-width="20" class="img manual-resize image right">
+                         -->
+                        <!-- Galerie -->
+                        <button class="toggle-details">→ Galerie ←</button>
+                        <div class="details">
+                            <div class="creation">
+                                <div class="image-group image bottom">
+                                    <img src="images/template1.png" alt="template1" class="img thumbnail" data-group="1">
+                                    <img src="images/template2.png" alt="template2" class="img thumbnail" data-group="1">
+                                    <img src="images/template1.png" alt="template3" class="img thumbnail" data-group="1">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- UE4pong -->
                     <div id="UE4pong" class="project">
-                        <div class="description">
+                        <div class="project-intro">
+                            <div class="description">
+                                <p>
+                                    <a href="https://gamejolt.com/games/UE4Pong/403631" target="_blank" class="btn-link btn-anim gamejolt">▶ UE4 Pong</a>
+                                    <br><br>
+                                    Ce projet à été réalisé à l'occasion d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, où le but était de revisiter le jeu <b>Pong</b>, avec un délai de 1 mois.
+                                    <br><br>
+                                    <a href="https://youtu.be/AOO82DqsIB8?si=SBrDGrHOd9ocfwoU" target="_blank">Annonce du concours</a> | <a href="https://www.youtube.com/live/HIyl5TOntiY?si=qtyqSAw9gveEOTFC&t=610" target="_blank">VOD du test</a>
+                                </p>
+                            </div>
+                            <img src="images/projects/ue4pong/ue4pong_thumbnail.png" alt="UE4pong thumbnail" data-width="60" class="img manual-resize image left">
+                        </div>
+                        <!-- En savoir plus
+                        <button class="toggle-details">→ En savoir plus ←</button>
+                        <div class="details">
                             <p>
-                                <a href="https://gamejolt.com/games/UE4Pong/403631" target="_blank" class="btn-link btn-anim gamejolt">▶ UE4 Pong</a>
-                                <br><br>
-                                Ce projet à été réalisé à l'occasion d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, où le but était de revisiter le jeu <b>Pong</b>, avec un délai de 1 mois.
-                                <br><br>
-                                <a href="https://youtu.be/AOO82DqsIB8?si=SBrDGrHOd9ocfwoU" target="_blank">Annonce du concours</a> | <a href="https://www.youtube.com/live/HIyl5TOntiY?si=qtyqSAw9gveEOTFC&t=610" target="_blank">VOD du test</a>
+                                Bla Bla Bla
                             </p>
                         </div>
-                        <img src="images/projects/ue4pong/ue4pong_thumbnail.png" alt="UE4pong thumbnail" data-width="60" class="img manual-resize image left">
+                         -->
+                        <!-- Galerie -->
+                        <button class="toggle-details">→ Galerie ←</button>
+                        <div class="details">
+                            <div class="creation">
+                                <div class="image-group image bottom">
+                                    <img src="images/template1.png" alt="template1" class="img thumbnail" data-group="1">
+                                    <img src="images/template2.png" alt="template2" class="img thumbnail" data-group="1">
+                                    <img src="images/template1.png" alt="template3" class="img thumbnail" data-group="1">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,10 +327,12 @@
                         <!-- Modèles Blockbench -->
                         <h3>Modèles fait sur <a href="https://www.blockbench.net" target="_blank">BlockBench</a></h3>
                         <div class="image-group image bottom">
-                            <iframe alt="Ballistic riffle" class="sketchfab-viewer image left" width="480" height="270" src="https://sketchfab.com/models/4d83a8e11005453ab894c8eca45e8827/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+                            <iframe alt="Ballistic riffle" class="sketchfab-viewer image left" width="640" height="360" src="https://sketchfab.com/models/4d83a8e11005453ab894c8eca45e8827/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
 
-                            <iframe alt="Travel" class="sketchfab-viewer image right" width="480" height="270" src="https://sketchfab.com/models/6e69d0f7397e46d7acc6d934b474fe91/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+                            <iframe alt="Travel" class="sketchfab-viewer image right" width="640" height="360" src="https://sketchfab.com/models/6e69d0f7397e46d7acc6d934b474fe91/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+                        </div>
 
+                        <div class="image-group image bottom">
                             <img src="https://cdnb.artstation.com/p/assets/images/images/054/667/861/large/daminator-4113-6-dark.jpg?1665068316" alt="Dark" class="img thumbnail" data-group="1">
                             <img src="https://cdnb.artstation.com/p/assets/images/images/054/770/037/large/daminator-4113-9-music.jpg?1665338884" alt="Music" class="img thumbnail" data-group="1">
                             <img src="https://cdna.artstation.com/p/assets/images/images/054/851/138/large/daminator-4113-11-winter.jpg?1665515981" alt="Winter" class="img thumbnail" data-group="1">
@@ -255,10 +345,12 @@
                         <h3>Modèles fait sur <a href="https://www.blender.org/" target="_blank">Blender</a></h3>
                         <p>Beaucoup de modèles ont été fait pour mes jeux <i>(une grande partie pour <a href="#FTB" class="scroll">Find The Button</a>)</i> et n'ont donc pas forcément de page associé.</p>
                         <div class="image-group image bottom">
-                            <iframe alt="Kraken" class="sketchfab-viewer image left" width="480" height="270" src="https://sketchfab.com/models/ee15934b72574220b562aebc89cea25d/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+                            <iframe alt="Kraken" class="sketchfab-viewer image left" width="640" height="360" src="https://sketchfab.com/models/ee15934b72574220b562aebc89cea25d/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
 
-                            <iframe alt="Nightmare #3" class="sketchfab-viewer image right" width="480" height="270" src="https://sketchfab.com/models/0d9a0362caf14874a67446ebc32fa09f/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+                            <iframe alt="Nightmare #3" class="sketchfab-viewer image right" width="640" height="360" src="https://sketchfab.com/models/0d9a0362caf14874a67446ebc32fa09f/embed" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true"></iframe>
+                        </div>
 
+                        <div class="image-group image bottom">
                             <img src="images/creations/perry.png" alt="Perry" class="img thumbnail" data-group="1">
                             <img src="images/creations/skeleton.png" alt="Skeleton" class="img thumbnail" data-group="1">
                             <img src="images/creations/hat05.png" alt="Witch Hat" class="img thumbnail" data-group="1">
@@ -292,8 +384,8 @@
                         <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-9004438C-77E6-4073-8B1C-66999A949507-0-1499156783.gif" alt="Blueball 4" data-width="50" class="img manual-resize image bottom">
                         <div class="image-group image bottom">
                             <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-BC4C9DE6-BE30-459B-B2E8-31BE797DCEA0-0-1545556270.gif" alt="Nightmare #12" class="img thumbnail image left" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-29EC2F30-9A51-48A0-A158-5C577F4E26B4-0-1483530749.gif" alt="3D Illusion" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-9C7B4694-38AD-4821-89D3-2C63D4C29360-0-1473970922.gif" alt="Nightmare #2" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
+                            <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-29EC2F30-9A51-48A0-A158-5C577F4E26B4-0-1483530749.gif" alt="3D Illusion" class="img thumbnail image bottom" data-group="1" style="height:100%;max-width:500px;">
+                            <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-9C7B4694-38AD-4821-89D3-2C63D4C29360-0-1473970922.gif" alt="Nightmare #2" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
                         </div>
                         <p>
                             Retrouvez plus de gifs sur ma page <a href="https://folioscope.co/daminator4113" target="_blank" class="btn-link folioscope"><img class="img-svg" style="height: 30px;" src="https://folioscope.co/assets/logo-a0701ce2c1256d35ae530dd4d4fc2a2b1d9a1308d84c76dce80e4a23acddf8aa.png" alt="Folioscope.co">Folioscope.co</a>
