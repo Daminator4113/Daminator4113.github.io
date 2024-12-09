@@ -200,8 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //------------------------------------------------------//
     //   ANIM UN SCROLL QUAND ON CLIQUE SUR UN BOUTON DU HEADER
     //------------------------------------------------------//
-    // Sélectionne tous les liens dans le header
-    const navLinks = document.querySelectorAll('.scroll a');
+    // Sélectionne tous les liens dans le header et les liens avec la class scroll
+    const navLinks = document.querySelectorAll('.scroll a, a.scroll');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -214,8 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Scrolle vers la section de manière fluide
             if (targetSection) {
                 const isNavLink = link.closest('header nav'); // Vérifie si c'est un lien du header
+                const isDropdownLink = link.closest('.dropdown'); // Vérifie si c'est un lien du dropdown
 
-                if (isNavLink) {
+                console.log(isNavLink,isDropdownLink,link)
+                
+                if (isNavLink && isDropdownLink === null) {
                     // Défilement avec position en haut pour les boutons du header
                     targetSection.scrollIntoView({
                         behavior: 'smooth',
@@ -310,5 +313,73 @@ document.addEventListener('DOMContentLoaded', () => {
         intro.style.display = 'flex';
         intro.style.flexDirection = flexDirection;
     });
+
+
+
+    //------------------------------------------------------//
+    //   MENUS DÉROULANTS DU TOP HEADER
+    //------------------------------------------------------//
+    const toggles = document.querySelectorAll('.dropdown-toggle');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    // Fonction pour fermer tous les menus déroulants
+    const closeAllDropdowns = () => {
+        dropdowns.forEach(dropdown => dropdown.classList.remove('open'));
+        toggles.forEach(toggle => toggle.classList.remove('open'));
+    };
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', (event) => {
+            const dropdown = toggle.nextElementSibling;
+
+            // Si le menu est déjà ouvert, on le ferme
+            if (dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+                toggle.classList.remove('open');
+            } else {
+                // Ferme tous les autres menus déroulants
+                closeAllDropdowns();
+
+                // Ouvre le menu associé
+                dropdown.classList.add('open');
+                toggle.classList.add('open');
+            }
+
+            // Empêche le clic sur le bouton de fermer immédiatement le menu
+            event.stopPropagation();
+        });
+    });
+
+    // Empêche la fermeture si on clique à l'intérieur d'un dropdown
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+    });
+
+    // Ferme les menus déroulants si on clique ailleurs
+    document.addEventListener('click', () => {
+        closeAllDropdowns();
+    });
+
+
+
+    //------------------------------------------------------//
+    //   RESIZE DYNAMIQUEMENT LA PARTIE PROFIL
+    //   POUR QUE LE TEXTE RENTRE S'IL EST TROP GRAND
+    //------------------------------------------------------//
+    const dynamicSection = document.querySelector('#profil');
+    const absoluteDiv = document.querySelector('.profile-container');
+
+    const adjustSectionHeight = () => {
+        const contentHeight = absoluteDiv.offsetHeight;
+        dynamicSection.style.height = `${contentHeight}px`;
+    };
+
+    // Ajuste la hauteur initialement
+    adjustSectionHeight();
+
+    // Réajuste si le contenu change (utile pour le texte dynamique)
+    window.addEventListener('resize', adjustSectionHeight);
 
 });

@@ -31,15 +31,6 @@ body {
     scroll-behavior: smooth;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #171717;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 footer {
     position: fixed;
     bottom: 0;
@@ -177,6 +168,72 @@ h3 {
 
 
 /*-------------------------
+    HEADER
+---------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #171717;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    padding-left: 20px;
+    background: rgba(23, 23, 23, 0.75);
+    border-left: 5px solid #2B2B2B;
+    border-radius: 0 0 5px 5px;
+    list-style: '⬥ ';
+    list-style-position: inside;
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+.dropdown li {
+    margin: 5px;
+    font-weight: normal;
+}
+
+.dropdown a {
+    font-weight: normal;
+}
+
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    color: #007BFF;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.dropdown-toggle.open {
+    transform: rotate(45deg); /* Change l'apparence en "-" */
+}
+
+.dropdown.open {
+    max-height: 200px; /* Ajustez en fonction du contenu maximum */
+    opacity: 1;
+}
+
+
+
+
+/*-------------------------
     IMAGES
 ---------------------------*/
 iframe {
@@ -193,6 +250,20 @@ img {
     border-radius: 5px;
     margin: 0px 0px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-svg {
+    height: 20px;
+    margin: 5px;
+    vertical-align: middle;
+    border-radius: 0px;
+    /*max-width: fit-content;*/
+}
+
+.img-svg.yt {
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 5px;
 }
 
 .img:hover {
@@ -472,7 +543,7 @@ img {
 /* Style par défaut : image à gauche, texte à droite */
 .project img {
     /*width: 40%;*/
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 #mes-jeux .project {
@@ -725,6 +796,7 @@ nav.footer ul li{
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 5px auto;
 }
 
 .btn-link:hover {
@@ -747,6 +819,13 @@ Special styles for websites
     background-color: #2d4371;
 }
 
+.udemy {
+    background-color: #8928C7;
+}
+.udemy:hover {
+    background-color: #671F98;
+}
+
 .youtube {
     background-color: #ff0000;
 }
@@ -764,9 +843,28 @@ Special styles for websites
 
 .artstation {
     padding: 5px;
-    background-color: #13AFF0;
+    background-color: #101014;
     color: #fff;
 }
 .artstation:hover {
-    background-color: #0C86BA;
+    background-color: #09638A;
+}
+
+.sketchfab {
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+}
+.sketchfab:hover {
+    background-color: #aaa;
+}
+
+.folioscope {
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    font-weight: normal;
+}
+.folioscope:hover {
+    background-color: #aaa;
 }
