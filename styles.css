@@ -575,6 +575,10 @@ img {
     flex-direction: column;
     gap: 0px;
 }
+#mes-project-pro .project {
+    flex-direction: column;
+    gap: 0px;
+}
 #prototypes .project {
     flex-direction: column;
     gap: 0px;
