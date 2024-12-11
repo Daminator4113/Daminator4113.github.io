@@ -8,6 +8,8 @@ images/projects/find_the_button/temple.gif
 # Unused
 *.url
 *.mp4
+*.odt
+*.pdf
 test/*
 organisation.txt
-cv.pdf
+portfolio_part2.png
