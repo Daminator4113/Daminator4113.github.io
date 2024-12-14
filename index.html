@@ -96,7 +96,7 @@
                                 <p>
                                     <a href="https://gamejolt.com/games/find_the_button/818614" target="_blank" class="btn-link btn-anim gamejolt">▶ FindTheButton</a>
                                     <br><br>
-                                    <b>Vous devez trouver le bouton caché dans chaque niveaux pour accéder au suivant.</b>
+                                    <b>Vous devez trouver le bouton caché dans chaque niveau pour accéder au suivant.</b>
                                     <br><br>
                                     <i>2018-2022</i>
                                 </p>
@@ -105,13 +105,96 @@
                         <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                            <p style="text-align: justify;">
-                                <i><i style="font-size: 1.8em;">“</i>J'ai commencé le dev de ce jeu en même temps que j'apprenais à utiliser Unreal en total autodidacte, il m'a servi de support d'apprentissage, et je ne voulais pas entamer un projet que je n'étais pas sûr d'aboutir. Donc et j'ai eu l'idée du "Find The Button" (en référence à un type de map sur Minecraft :D), qui était un concept assez simple à mettre en place mais qui m'a quand même permis d'explorer plein de facettes d'Unreal et du dev de jeu en général.
-                                <br><br>
-                                J'ai notamment pu pratiquer la modélisation 3D sur Blender <i>(j'ai produit tout les modèles 3D du jeu)</i>, ou encore m'intéresser au Game Design et Level Design, ainsi qu'à l'élaboration d'une ambiance sonore (à l'aide de bibliothèque libre de droit, j'ai essayé d'insufler de la vie à l'ambiance général de chaque niveaux).
-                                <br><br>
-                                Initialement je n'étais pas sûr de vouloir le publier étant donné qu'il a souffert de toutes les erreurs que j'ai pu commettre au cours de mon apprentissage sur Unreal, toutefois j'aime bien ce que j'ai finis par en faire, et je m'étais dit que ça pouvait potentiellement intéresser des gens. Il doit y avoir quelques bugs par-ci par-là, et certains niveaux souffrent de quelque problèmes d'optimisations, mais je n'ai pas souhaité continuer ce projet et j'ai préfèré le sortir tel-quel avec ses défauts, plutôt que de ne pas le sortir du tout.<i style="font-size: 1.8em;">”</i></i>
-                            </p>
+                            <!-- Contexte -->
+                            <button class="toggle-details" id="FTB-contexte"><h3 style="margin: 0">Contexte</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    <i><i style="font-size: 1.8em;">“</i>J'ai commencé le dev de ce jeu en même temps que j'apprenais à utiliser Unreal en total autodidacte, il m'a servi de support d'apprentissage, et je ne voulais pas entamer un projet que je n'étais pas sûr d'aboutir. Donc j'ai eu l'idée du "Find The Button" (en référence à un type de map sur Minecraft :D), qui était un concept assez simple à mettre en place mais qui m'a quand même permis d'explorer plein de facettes d'Unreal et du dev de jeu en général.
+                                    <br><br>
+                                    J'ai notamment pu pratiquer la modélisation 3D sur Blender <i>(j'ai produit tous les modèles 3D du jeu)</i>, ou encore m'intéresser au Game Design et Level Design, ainsi qu'à l'élaboration d'une ambiance sonore (à l'aide de bibliothèque libre de droit, j'ai essayé d'insuffler de la vie à l'ambiance générale de chaque niveau).
+                                    <br><br>
+                                    Initialement je n'étais pas sûr de vouloir le publier étant donné qu'il a souffert de toutes les erreurs que j'ai pu commettre au cours de mon apprentissage sur Unreal, toutefois j'aime bien ce que j'ai fini par en faire, et je m'étais dit que ça pouvait potentiellement intéresser des gens. Il doit y avoir quelques bugs par-ci par-là, et certains niveaux souffrent de quelques problèmes d'optimisations, mais je n'ai pas souhaité continuer ce projet et j'ai préféré le sortir tel quel avec ses défauts, plutôt que de ne pas le sortir du tout.<i style="font-size: 1.8em;">”</i></i>
+                                </p>
+                            </div>
+
+                            <!-- Mécaniques -->
+                            <button class="toggle-details"><h3 style="margin: 0">Mécaniques</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    Le concept du jeu est plutôt simple, un bouton de même taille et apparence est caché dans chaque niveau, et il faut le trouver pour accéder au niveau suivant.<br>
+                                    <br>
+                                    J'ai voulu faire en sorte que chaque niveau ait sa propre identité, au tout début je comptais simplement faire un niveau, le décorer et trouver un endroit où cacher le bouton à l'intérieur, mais pour certains niveaux, j'ai voulu implémenter une façon plus originale de découvrir le bouton que juste "le trouver". Et on se retrouve au final avec tantôt de la simple recherche, tantôt du puzzle.
+                                </p>
+                            </div>
+                            <!-- Conception -->
+                            <button class="toggle-details"><h3 style="margin: 0">Conception</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    J'ai commencé par faire une "todo list" avec toutes les étapes que je jugeais nécessaires et l'ordre dans lequel je devais les faire. De cette manière j'avais un plan structuré et des étapes de production définis et ça m'a grandement aidé à ne pas m'égarer et surtout à pouvoir suivre ma progression.<br>
+                                    <br>
+                                    J'ai notamment commencé par mettre en place le système de menu avec les options, et le sélecteur de niveau.<br>
+                                    Puis je me suis attelé au système de sauvegarde qui a beaucoup changé au fur et à mesure du développement.<br>
+                                    Ensuite j'ai fait le système pour passer d'un niveau à l'autre quand on trouvait le bouton.<br>
+                                    Et c'est à partir de là que j'ai enfin commencé à faire réellement les niveaux.<br>
+                                    <br>
+                                    Le processus était presque le même à chaque fois, je m'étais fait une liste avec plein d'idées de thèmes pour chaque niveau. Et à partir d'un thème choisi je m'occupais de modéliser le terrain de jeu, puis je listais les modèles dont j'aurais besoin pour décorer le niveau, et une fois cette liste faite, je passais sur Blender pour faire tous les modèles et leurs variantes si besoin avec également leurs collisions. Je n'ai jamais eu besoin de trop m'attarder sur les UV puisque pour la plupart le style du jeu se contentait de simples aplat de couleurs.<br>
+                                    Et enfin j'importais tout ça dans le moteur, et je pouvais ensuite faire le Level Design.<br>
+                                    Pour certains niveaux, je devais également m'occuper de leur mécanique.<br>
+                                    <br>
+                                    Je vais prendre pour exemple le niveau 12 (qui se passe dans une sorte de temple maya) et décrire toutes les étapes du game design de ce niveau.<br>
+                                    <img src="https://cdna.artstation.com/p/assets/images/images/033/760/574/large/daminator-4113-level12-design.jpg?1610491331" alt="Level12 map" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    Le bouton n'est pas accessible immédiatement, il faut résoudre une série de petites énigmes pour ouvrir une porte derrière laquelle se trouve le bouton.<br>
+                                    Pour cela j'ai dû réfléchir à une façon de faire comprendre au joueur les différentes étapes de progression.<br>
+                                    Et ça commence par l'exploration. En explorant, le joueur va trouver 3 salles :<br>
+                                    <br>
+                                    • Une salle avec une table au milieu<br>
+                                    <img src="images/projects/find_the_button/middle_room.png" alt="Level12 middle room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    • Une petite salle avec 3 supports<br>
+                                    <img src="images/projects/find_the_button/small_room.png" alt="Level12 small room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    • Une grande salle avec un mur disposant de 4 cubes rotatifs avec des totems sur chaque face et au-dessus de chaque cube, un chiffre (initialement sur 0), mais aussi dans un creux du mur, un rocher avec également des totems sur chaque face, que le joueur peut déplacer.<br>
+                                    <img src="images/projects/find_the_button/big_room.png" alt="Level12 big room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    Il va aussi remarquer sur les murs et plafond, des petits totems avec différentes expressions, qui, en cliquant dessus, vont émettre un son et se mettre à briller.<br>
+                                    <img src="images/projects/find_the_button/totem.gif" alt="Level12 totem" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <br>
+                                    C'est sur ce point que je veux amener le joueur, lui faire comprendre que s'il allume un totem, la valeur au-dessus de l'un des cubes rotatifs de la grande salle va changer.<br>
+                                    En fait l'idée c'est qu'au fur et à mesure de son exploration, et au vu du principe du jeu, le joueur va être amené à essayer plein de choses mais surtout à repasser plusieurs fois aux mêmes endroits. Et donc en cliquant sans trop comprendre sur les totems, il devrait finir par remarquer que les chiffres changent dans la salle principale.<br>
+                                    <br>
+                                    Dans l'optique de comprendre pourquoi ces chiffres ont changé, il va ensuite tester d'allumer/éteindre un totem, et cela va l'amener à comprendre également que l'expression de chaque totem correspond à un emplacement spécifique au-dessus de chaque rocher rotatif.<br>
+                                    Il devrait par la suite naturellement essayer de faire correspondre chaque expression pour chaque chiffre.<br>
+                                    <br>
+                                    Mais je ne voulais pas que ça soit aussi "simple", et je voulais mettre des passages secrets et des pièges dans le niveau, pour être le plus dans le thème du temple maya.<br>
+                                    Donc quand le joueur aura trouvé tous les totems accessibles, et qu'il aura fait correspondre la bonne expression au bon chiffre, il va se rendre compte qu'il ne se passe rien de plus.<br>
+                                    Je crée une forme de frustration, pour essayer de faire comprendre au joueur qu'il lui manque une donnée, et c'est le cas, de cette façon il devrait se rendre compte qu'il dispose d'un rocher totem pouvant être déplacé (il peut très bien s'en être rendu compte avant par ailleurs)<br>
+                                    Et ce rocher, il va essayer d'en faire quelque chose, par exemple de le mettre dans la petite salle sur l'un des 3 supports (qui sont là pour faire comprendre que le cube rentre parfaitement dans l'emplacement, et que le fait que le joueur n'ait qu'un seul cube, implique qu'il doive en trouver 2 autres)<br>
+                                    Mais il peut aussi se rendre compte que dans la salle avec la table, il y a également un support dans un des coins de la pièce, et en plaçant le cube dessus, il va ouvrir l'un des murs, dévoilant un passage secret.<br>
+                                    <img src="images/projects/find_the_button/secret_passage.png" alt="Level12 secret passage" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    Ce passage secret donne accès à un autre cube, mais aussi à d'autres totems muraux, confirmant au joueur le fait qu'il n'avait pas accès à tout et que sa solution était peut-être la bonne au final.<br>
+                                    <br>
+                                    Il ne reste plus qu'un seul cube à trouver au joueur pour pouvoir les placer sur chaque support, et en cherchant ce dernier, il le trouvera à l'extérieur du temple. (L'ordre de découverte de chaque étape n'a pas d'importance, le joueur peut très bien ouvrir le passage secret avant de comprendre comment fonctionnent les totems).<br>
+                                    C'est là que la petite salle trouve son utilité, en réunissant les 3 cubes, une dernière porte cachée va s'ouvrir pour révéler un énorme totem illuminable au sol. Sa taille a pour but de faire comprendre, si ça n'était pas le cas, que ces totems ont une importance et ne sont pas juste là pour décorer.<br>
+                                    <img src="images/projects/find_the_button/big_totem.png" alt="Level12 big totem" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    Si le joueur réussit tout ça, la porte finale (le mur avec les chiffres) va s'ouvrir, révélant le trésor de ce temple et par la même occasion le bouton pour passer au niveau suivant.<br>
+                                    <img src="images/projects/find_the_button/final_room.png" alt="final_room map" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    <br>
+                                    Après avoir fait ce processus de game design pour les 16 niveaux (avec plus ou moins de complexité pour chaque), j'ai commencé à ajouter les effets sonores et les musiques.<br>
+                                    De la même manière que le reste, j'ai commencé par faire une liste des sons qu'ils devaient y avoir pour chaque niveau ainsi que leur thème musical associé. Puis n'ayant aucune compétence en sound design ou en musique de manière générale, je me suis tourné vers les banques de son libre de droit, et j'ai par ailleurs énormément utilisé <a href="https://freesound.org" target="_blank">freesound.org</a> pour ça.<br>
+                                    <br>
+                                    Il y a beaucoup de choses que je n'ai pas décrites en détails, par exemple de la correction de bug, des ajouts d'effet de post-process, la modification du système de sauvegarde, des améliorations de l'UI, l'ajout d'un système de succès, etc... qui se sont faites en continu tout le long du développement du projet.<br>
+                                    J'ai quand même fait une grosse phase de debug après tout cela, pour essayer d'optimiser les performances du mieux que je pouvais le faire.<br>
+                                    J'ai également intégré une traduction en anglais pour plus de portabilité.<br>
+                                    <br>
+                                    Et pour finir j'ai réfléchi à la façon dont je voulais mettre en ligne le jeu.<br>
+                                    Initialement je voulais le mettre sur Steam et profiter également de son système de workshop pour intégrer un éditeur de niveau pour que le jeu ait une forme de rejouabilité, mais comme dit dans la section <a href="#FTB-contexte" class="scroll">contexte</a>, ce projet a souffert de toutes les erreurs commises au cours de mon apprentissage.<br>
+                                    Mais aussi la partie communication a été inexistante (en partie par choix, étant donné que c'était mon premier vrai projet et que j'apprenais avec).<br>
+                                    <br>
+
+
+                                </p>
+                            </div>
                         </div>
                         <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
@@ -152,13 +235,13 @@
                                 <p>
                                     <a href="https://gamejolt.com/games/tourment/701553" target="_blank" class="btn-link btn-anim gamejolt">▶ Tourment</a>
                                     <br><br>
-                                    Ce projet fait partie de la série des "Up Your Skills Challenges" proposé par la chaine de <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>.
+                                    Ce projet fait partie de la série des "Up Your Skills Challenges" proposée par la chaîne de <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>.
                                     <br><br>
                                     Pour ce challenge, nous disposions de 15 jours pour proposer un projet qui s'inscrivait dans ce thème : <a href="https://www.twitch.tv/videos/1419815023" target="_blank">"Créer un passage de l'Angoisse"</a>.
                                     <br><br>
-                                    Tout les projets ont ensuite été testé directement en live : <a href="https://youtu.be/_zgMaUp5L7I?t=2482" target="_blank">VOD du test</a>. <i>(Je vous conseils de le tester par vous-même avant)</i>
+                                    Tous les projets ont ensuite été testés directement en live : <a href="https://youtu.be/_zgMaUp5L7I?t=2482" target="_blank">VOD du test</a>. <i>(Je vous conseille de le tester par vous-même avant)</i>
                                     <br><br>
-                                    N'hésitez pas à allez jeter un œil à la page <a href="https://daminator4113.artstation.com/albums/5755783" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a> du projet.
+                                    N'hésitez pas à aller jeter un œil à la page <a href="https://daminator4113.artstation.com/albums/5755783" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a> du projet.
                                     <br><br>
                                     <i>-2022</i>
                                 </p>
@@ -169,7 +252,7 @@
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
                                 <p>
-                                    Pour ce projet je voulais explorer un thème visuel et une esthétique qui me tiens vraiment à cœur. J'ai pu jouer un peu avec les shaders afin de donner ce style crayonné que j'aime beaucoup.
+                                    Pour ce projet, je voulais explorer un thème visuel et une esthétique qui me tiennent vraiment à cœur. J'ai pu jouer un peu avec les shaders afin de donner ce style crayonné que j'aime beaucoup.
                                 </p>
                         </div>
                         <!-- Galerie -->
@@ -199,7 +282,7 @@
                                     <br><br>
                                     Pour ce challenge, nous disposions de 72 heures pour proposer un projet qui s'inscrivait dans ce thème : <a href="https://ldjam.com/events/ludum-dare/56/results" target="_blank">"Tiny Creatures"</a>.
                                     <br><br>
-                                    Nous étions 5 sur ce projet, et je me suis principalement occupé du design et la production des dessins.
+                                    Nous étions 5 sur ce projet, et je me suis principalement occupé du design et de la production des dessins.
                                     <br><br>
                                     <i>-2024</i>
                                 </p>
@@ -235,15 +318,15 @@
                                 <p>
                                     <a href="https://www.curseforge.com/minecraft/worlds/the-stolen-artifact" target="_blank" class="btn-link btn-anim gamejolt">▶ The Stolen Artifact</a>
                                     <br><br>
-                                    Ce projet à été réalisé à l'occasion de la <a href="https://docs.google.com/document/d/1ornjKlMOZ4HZBWh8l1HET--A09U2FY5JT6bTug-5LXo/edit?tab=t.0#heading=h.dqp5a17hxj00" target="_blank">"Java Realms Creators 10th Anniversary Map Jam"</a>.
+                                    Ce projet a été réalisé à l'occasion de la <a href="https://docs.google.com/document/d/1ornjKlMOZ4HZBWh8l1HET--A09U2FY5JT6bTug-5LXo/edit?tab=t.0#heading=h.dqp5a17hxj00" target="_blank">"Java Realms Creators 10th Anniversary Map Jam"</a>.
                                     <br><br>
-                                    Nous disposions de 5 jours (120h) pour créer une map qui devait respecter l'un des thème principaux ET secondaires au choix parmi ceux proposés :
+                                    Nous disposions de 5 jours (120h) pour créer une map qui devait respecter l'un des thèmes principaux ET secondaires au choix parmi ceux proposés :
                                     <br>Thèmes principaux: COSMOS | MYTHOLOGY
                                     <br>Thèmes secondaires : ANTIQUE | ODYSSEY
                                     <br><br>
-                                    Nous étions 2 sur ce projets et nous avions choisis les thèmes MYTHOLOGY et ANTIQUE.
+                                    Nous étions 2 sur ce projet et nous avions choisi les thèmes MYTHOLOGY et ANTIQUE.
                                     <br><br>
-                                    Vous pouvez retrouver tout les autres projets créer lors de cette JAM ici : <a href="https://docs.google.com/spreadsheets/d/1e4iMoCZdKfU0mQSjser4oAal6fTVWPezTUD5MwylXbg/edit?gid=0#gid=0" target="_blank">Liste des projets</a>
+                                    Vous pouvez retrouver tous les autres projets créés lors de cette JAM ici : <a href="https://docs.google.com/spreadsheets/d/1e4iMoCZdKfU0mQSjser4oAal6fTVWPezTUD5MwylXbg/edit?gid=0#gid=0" target="_blank">Liste des projets</a>
                                     <br><br>
                                     <i>-2024</i>
                                 </p>
@@ -281,7 +364,7 @@
                                 <p>
                                     <a href="https://www.mediafire.com/file/i712wf4k03st1zz/SpeedyMaze.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ GlitchedMaze</a>
                                     <br><br>
-                                    Ce projet à été réalisé à l'occasion d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, avec un délai de 1 mois, où le but était de faire un <b>Labyrinthe</b> en ajoutant des mécaniques originales.
+                                    Ce projet a été réalisé lors d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, avec un délai de 1 mois, où le but était de faire un <b>Labyrinthe</b> en ajoutant des mécaniques originales.
                                     <br><br>
                                     <a href="https://youtu.be/U3wnYTDof6Y?si=JN2bu20ULlhXv_kt&t=95" target="_blank">Annonce du concours</a>
                                     <br><br>
@@ -320,7 +403,7 @@
                                 <p>
                                     <a href="https://gamejolt.com/games/UE4Pong/403631" target="_blank" class="btn-link btn-anim gamejolt">▶ UE4 Pong</a>
                                     <br><br>
-                                    Ce projet à été réalisé à l'occasion d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, où le but était de revisiter le jeu <b>Pong</b>, avec un délai de 1 mois.
+                                    Ce projet a été réalisé lors d'un concours organisé par <a href="https://www.youtube.com/@MATHIEU_YT" target="_blank">MathieuGameDev</a>, où le but était de revisiter le jeu <b>Pong</b>, avec un délai de 1 mois.
                                     <br><br>
                                     <a href="https://youtu.be/AOO82DqsIB8?si=SBrDGrHOd9ocfwoU" target="_blank">Annonce du concours</a> | <a href="https://www.youtube.com/live/HIyl5TOntiY?si=qtyqSAw9gveEOTFC&t=610" target="_blank">VOD du test</a>
                                     <br><br>
@@ -398,9 +481,9 @@
                                 <p>
                                     <a href="https://www.mediafire.com/file/84rgiywd68w1jb8/BlueBall+v0.0.1.6.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ Blue Ball</a>
                                     <br><br>
-                                    J'avais pour projet de faire un éditeur qui permettrait de créer des gifs amusant dans la même volonté que mes gifs <a href="#animations" class="scroll">BlueBall</a> animés sur <a href="https://folioscope.co" target="_blank">Folioscope.co</a>.
+                                    J'avais pour projet de faire un éditeur qui permettrait de créer des gifs amusants dans la même volonté que mes gifs <a href="#animations" class="scroll">BlueBall</a> animés sur <a href="https://folioscope.co" target="_blank">Folioscope.co</a>.
                                     <br><br>
-                                    Je me suis heurté à plusieurs difficultées que je n'ai pas su surmonter à ce moment là, j'ai donc arrêter ce projet.
+                                    Je me suis heurté à plusieurs difficultés que je n'ai pas su surmonter à ce moment-là, j'ai donc arrêté ce projet.
                                     <br><br>
                                     <i>-2018</i>
                                 </p>
@@ -435,7 +518,7 @@
                                 <p>
                                     <a href="https://www.mediafire.com/file/dacfipu273qdftk/Kawai_Slender_v1.0.0.0.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ Kawai Slender</a>
                                     <br><br>
-                                    Ce projet à été l'un des premiers tutoriel sur UE4 que j'ai suivi pour apprendre à créer un jeu pas à pas. Il était proposé par <a href="https://jeancharpentier.fr" target="_blank">Jean Charpentier</a> <i>(Malheureusement sa chaine YouTube n'existe plus)</i>
+                                    Ce projet a été l'un des premiers tutoriels sur UE4 que j'ai suivis pour apprendre à créer un jeu pas à pas. Il était proposé par <a href="https://jeancharpentier.fr" target="_blank">Jean Charpentier</a>. <i>(Malheureusement, sa chaîne YouTube n'existe plus)</i>
                                     <br><br>
                                     <i>-2017</i>
                                 </p>
@@ -445,9 +528,9 @@
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
                             <p style="text-align: justify;">
-                                <i><i style="font-size: 1.8em;">“</i>Dans ce tutoriel on nous apprenait à utiliser Blender pour faire la map du jeu, faires ses assets, etc... le tout en Low Poly. A utiliser makehuman pour faire les personnages, leur squelette et le riging. Et aussi à utiliser le moteur Unreal Engine 4 avec la programmation en blueprint.
+                                <i><i style="font-size: 1.8em;">“</i>Dans ce tutoriel, on nous apprenait à utiliser Blender pour faire la map du jeu, faire ses assets, etc... le tout en Low Poly. À utiliser MakeHuman pour faire les personnages, leur squelette et le rigging. Et aussi à utiliser le moteur Unreal Engine 4 avec la programmation en Blueprint.
                                 <br><br>
-                                C'est juste après ce projet que j'ai voulus me lancer dans le développement de mon propre jeu <a href="#FTB" class="scroll">FindTheButton</a> en reprenant le style Low Poly utilisé dans Kawai Slender<i style="font-size: 1.8em;">”</i></i>
+                                C'est juste après ce projet que j'ai voulu me lancer dans le développement de mon propre jeu <a href="#FTB" class="scroll">FindTheButton</a> en reprenant le style Low Poly utilisé dans Kawai Slender<i style="font-size: 1.8em;">”</i></i>
                             </p>
                         </div>
                         <!-- Galerie -->
@@ -508,7 +591,7 @@
                                 <p>
                                     <a href="https://www.mediafire.com/file/8fg199jogav6pov/zBrique_Alpha.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ zBrique</a>
                                     <br><br>
-                                    Ce projet est un simple casse brique 2D et a été le tout 1er prototype de jeu développé sous Construct lors de ma <a href="#online_courses" class="scroll">Formation sur OpenClassroom</a>.
+                                    Ce projet est un simple casse-brique 2D et a été le tout 1er prototype de jeu développé sous Construct lors de ma <a href="#online_courses" class="scroll">Formation sur OpenClassroom</a>.
                                     <br><br>
                                     <i>-2015</i>
                                 </p>
@@ -602,7 +685,7 @@
                                     <br><br>
                                 </p>
                                 <p style="text-align: justify;">
-                                    <i><i style="font-size: 1.8em;">“</i>C'est une map Minecraft à but pédagogique, à destination de l’Université de Poitiers, ce projet visait à montrer le fonctionnement d’une usine à la pointe de la technologie, avec tous les systèmes liés entre eux.<i style="font-size: 1.8em;">”</i></i>
+                                    <i><i style="font-size: 1.8em;">“</i>C'est une map Minecraft à but pédagogique, à destination de l’Université de Poitiers. Ce projet visait à montrer le fonctionnement d’une usine à la pointe de la technologie, avec tous les systèmes liés entre eux.<i style="font-size: 1.8em;">”</i></i>
                                 </p>
                                 <p>
                                     <br><br>
@@ -664,7 +747,7 @@
                             <img src="https://cdna.artstation.com/p/assets/images/images/054/851/138/large/daminator-4113-11-winter.jpg?1665515981" alt="Winter" class="img thumbnail" data-group="1">
                         </div>
                         <p>
-                            Retrouvez plus de modèles sur la section dédiées au modèles BlockBench sur mon <a href="https://daminator4113.artstation.com/albums/2549740" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
+                            Retrouvez plus de modèles sur la section dédiée aux modèles BlockBench sur mon <a href="https://daminator4113.artstation.com/albums/2549740" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
                         </p>
 
                         <!-- Modèles Blender -->
@@ -681,7 +764,7 @@
                             <img src="images/creations/3d_models/hat05.png" alt="Witch Hat" class="img thumbnail" data-group="1">
                         </div>
                         <p>
-                            Retrouvez plus de modèles sur la section dédiées au modèles Blender sur mon <a href="https://daminator4113.artstation.com/albums/5464759" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
+                            Retrouvez plus de modèles sur la section dédiée aux modèles Blender sur mon <a href="https://daminator4113.artstation.com/albums/5464759" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
                         </p>
                     </div>
                 </div>
@@ -703,7 +786,7 @@
                             <img src="https://cdnb.artstation.com/p/assets/images/images/071/699/593/large/daminator-4113-jdr-kitsune-2.jpg?1705745976" alt="kitsune" class="img thumbnail" data-group="1">
                         </div>
                         <p>
-                            Retrouvez plus de dessin sur la section dédiées sur mon <a href="https://daminator4113.artstation.com/albums/10499150" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
+                            Retrouvez plus de dessin sur la section dédiée sur mon <a href="https://daminator4113.artstation.com/albums/10499150" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
                         </p>
                         
                         <!-- Dessins papier 
@@ -819,7 +902,7 @@
                             <p>
                                 Passionné par les Arts et les Jeux Vidéos, j'ai toujours apprécié les jeux avec un univers, une ambiance et une narration atypique.
                                 <br>J'ai effectué plusieurs formations en <strong>autodidacte</strong>, et mon objectif aujourd'hui est de poursuivre ma formation en <strong>Level Design</strong> et en faire mon métier.
-                                <br>J'apprécie également la programmation de manière général et j'aime bien faire des petits scripts en python pour un peu tout !
+                                <br>J'apprécie également la programmation de manière générale et j'aime bien faire des petits scripts en Python pour un peu tout !
                             </p>
                             <!--
                             <a href="https://perdu.com/" class="btn" target="_blank">Télécharger mon CV</a>

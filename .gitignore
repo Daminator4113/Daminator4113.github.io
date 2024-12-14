@@ -6,6 +6,7 @@ images/projects/find_the_button/pipes.gif
 images/projects/find_the_button/temple.gif
 
 # Unused
+*.lnk
 *.url
 *.mp4
 *.odt
