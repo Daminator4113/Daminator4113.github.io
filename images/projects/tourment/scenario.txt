@@ -1,0 +1,143 @@
+Nom de l'expérience : TOURMENT
+
+
+Intégré un support VR
+
+
+On progresse dans un environnement entièrement noir et blanc
+avec une musique sur un rythme rapide et sec (touche de piano, note de violon aigu)
+Par moment il y a des sons fort (plsieur touche de piano ou grosse bass) qui pop et qui font inversé toutes les couleur à l'écran, comme un flash
+
+Inspi Peurs du Noir / La scène du bateau dans charly et la chocolatrie / insidious
+
+
+
+Idée de sueur froide :
+- Se retourner et voir 2 points rouge ou blanc comme des yeux, mais se rendre compte que c'est des lampadaires
+- Voir une silhouette de résorber au loin dès qu'on la regarde (une ombre dans un coin de mur qui se "cache")
+- Des bruits de pas qui accélère dans notre direction sans qu'on sache d'où ça vient
+- être imiter, et cesser l'imitation, exemple : On est suivi par quelque chose, si on avance, ça avance, si on recule, pareil, quand on regarde derrière, ça regarde derrière. Casser l'imitation, c'est par exemple se retourner, mais que ça ne se retourne pas, ça ne fait rien de spécial, mais au moment ou on le quitte des yeux, giga chuchottment Binaural dans les oreilles
+- Son binaural intense : Porte qui claque, ou frapper à une porte, ou mouvement de tissu (comme si quelqu'un était à côté)
+
+
+
+
+Scénar :
+
+### CHAPITRE 1 : Le réveil
+
+Ambiance sonore : silence total
+
+On est allongé dans un lit, et un réveil sonne à notre droite (ou gauche)
+
+Le joueur peut tourner la caméra pour regarder le réveil
+
+Si le joueur regarde le réveil, ça lui propose de l'éteindre
+→ Si on éteint le réveil, le bruit se coupe et les yeux se referme
+→ Si on ne fait rien, au bout d'un petit temps, le bruit se coupe et les yeux se referme
+
+Le réveil sonne encore, même principe
+
+Le réveil sonne une 3 ème fois, mais quand on regarde le réveil, 2 yeux blanc nous observe à la place du réveil
+le bruit du réveil s'intensifi
+les yeux disparaissent, et le réveil se coupe sec
+
+d'un coup notre lit se redresse, et nous met face à une porte au fond de la pièce, ça nous fait avancer vite jusqu'a la porte qui s'ouvre, et on se retrouve dans le couloir. la porte claque derrière nous
+
+
+
+### CHAPITRE 2 : Le couloir
+
+Ambiance sonore : chalet en bois, craquement, vent étouffé dehors
+
+On donne les controle au joueur :
+- mouvement ↑↓→←
+- tourner la camera uniquement droite gauche (on restreint la hauteur)
+
+Une bougie brille quelque mètre devant le joueur
+
+Il s'avance pour prendre la bougie et appuie sur une touche pour la prendre (obliger)
+
+Le joueur avance dans ce "couloir" avec un très faible halo de lumière devant lui
+
+Il arrive a un virage à gauche
+
+Au moment ou il regarde dans le virage, il vois une silhouette au loin fuir dans le virage a droite
+
+Il passe devant une fenêtre avec quelqu'un qui le regarde de l'autre côté → il a un style de trait gribrouillon qui "grouille"
+
+il arrive à un virage à droite, et au fond une porte fermé
+
+en arrivant vers la porte fermé, celle ci s'ouvre toute seul
+
+il passe dans une forêt avec des arbres dense et très grand, des ombres sont caché derrière les arbre et nous regarde passer
+
+La porte de derrière se referme et n'est plus qu'une porte toutes seul (le couloir disparait)
+
+Certains arbre faisant pensé à des pattes d'araignée qui bougent (au loin en arrière plan)
+
+le joueur doit atteindre une autre porte à l'autre bout
+
+une fois qu'il passe la porte, il y a un virage à gauche
+
+Après avoir avancé un peu dans le couloir, on joue un bruit de frottement derrière le joueur
+
+On le fait se retourner et on vois les silhouette de la forêt qu'il l'ont suivi
+
+On avance vers le reste du couloir, et au moment ou on a passer le virage, on entend des bruit de pas se raprocher très vite dans le couloir juste avant (tac tac TAC TAC TAAAC!!)
+
+Les bruit de pas s'arrête derrière nous.
+
+On ne peut plus bouger, et on force la caméra à se retourner, on vois alors les silouhettes qui nous regarde avec un sourire.
+
+On peut de nouveau bouger la caméra
+
+Dès qu'on quitte les silhouettes des yeux et qu'on vois la porte rouge, gros chuchotement binaural
+
+bruit de violon ou piano type insidious, la fov qui change → musique stressante qui se lance
+
+Le joueur dois courir vers la porte, il entend des porte claquer ou tambouriner à droite et a gauche
+
+Il entend des bruit de pas de courses lourd derrière lui en même temps
+
+On joue avec les shape keys pour se faire rapprocher ou s'éloigné la porte en fonction de :
+→ Si le joueur se laisse attraper, la porte rouge s'approche du joueur, s'ouvre, et il passe de l'autre côté
+→ Si le joueur continue d'avancer, la  porte s'éloigne, mais quand il arrive à la porte, il ne peut pas l'ouvrir (ça propose d'appuyer sur un bouton pour le faire), et les bruit de course derrière se raproche
+
+Le joueur peut spam la porte mais rien n'y fera, on se fera atteindre par les bruit de pas
+
+La porte s'ouvre, et on peut passer au chapitre suivant
+
+
+
+### CHAPITRE 3 : Le Tunel Feroviaire
+
+La porte rouge se referme derrière nous (claquement)
+
+On se retrouve dans le noir et dans le silence, et notre vu s'adapte progressivement
+
+On donne les controle au joueur :
+- mouvement ↑↓→←
+- tourner la camera uniquement droite gauche (on restreint la hauteur)
+
+Le joueur marche
+
+Ambiance sonore de tunel avec clapotis d'eau, et bruit de gravier quand on marche
+
+Une lumière blanche se révèle loin dans le noir
+
+Le joueur se déplace pour se raprocher de la source lumineuse : le joueur ne peut pas reculer
+
+A un certains moment, la source lumineuse s'avère être la lumière d'un train qui nous fonce dessus → bruit de locomotive a vapeur et sifflet au loin qui se rapproche
+Là le joueur peut fuir, ses déplacement devienne des pas de courses
+
+Au moment de l'impacte, on force la caméra à regarder le train
+
+Impacte : Coupure du son, écran noir
+
+Puis un bruit de réveil au loin → Boucle infinis
+
+
+
+
+Test durée : 3 minutes minimum

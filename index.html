@@ -126,6 +126,7 @@
                                     J'ai voulu faire en sorte que chaque niveau ait sa propre identité, au tout début je comptais simplement faire un niveau, le décorer et trouver un endroit où cacher le bouton à l'intérieur, mais pour certains niveaux, j'ai voulu implémenter une façon plus originale de découvrir le bouton que juste "le trouver". Et on se retrouve au final avec tantôt de la simple recherche, tantôt du puzzle.
                                 </p>
                             </div>
+
                             <!-- Conception -->
                             <button class="toggle-details"><h3 style="margin: 0">Conception</h3></button>
                             <div class="details">
@@ -251,9 +252,42 @@
                         <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                                <p>
-                                    Pour ce projet, je voulais explorer un thème visuel et une esthétique qui me tiennent vraiment à cœur. J'ai pu jouer un peu avec les shaders afin de donner ce style crayonné que j'aime beaucoup.
+                            <!-- Contexte -->
+                            <p>
+                                <i><i style="font-size: 1.8em;">“</i>Pour ce projet, je voulais explorer un thème visuel et une esthétique qui me tiennent vraiment à cœur. J'ai pu jouer un peu avec les shaders afin de donner ce style crayonné que j'aime beaucoup.<i style="font-size: 1.8em;">”</i></i><br><br>
+                            </p>
+
+                            <!-- Mécaniques -->
+                            <button class="toggle-details"><h3 style="margin: 0">Mécaniques</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    La progression est linéaire, les seules actions possibles sont le fait d'avancer à un rythme assez lent et constant, et interagir avec les portes.<br>
+                                    <br>
+                                    Je vais ici faire en sorte que l'ambiance soit pesante en jouant le plus possible avec les effets sonores, et renforcer le côté "angoissant", en utilisant des codes de l'horreur, comme par exemple des bruits de portes qui claquent, des couloirs avec une silhouette qui disparaît dans le coin de l'œil, ou encore le fait d'être suivi.<br>
+                                    <br>
+                                    L'expérience est assez courte ~3 minutes
                                 </p>
+                            </div>
+                            
+                            <!-- Conception -->
+                            <br><br><i>(Si vous comptez tester le jeu, je vous conseille de ne pas lire cette section tout de suite)</i>
+                            <button class="toggle-details"><h3 style="margin: 0">Conception</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    J'ai commencé par chercher des idées de ce que j'allais bien pouvoir raconter / faire pour cette JAM, mais aussi des idées d'éléments rentrant dans le thème de l'angoisse. Et j'ai organisé tout ça dans un <a href="images/projects/tourment/scenario.txt" target="_blank">fichier texte</a>.<br>
+                                    <br>
+                                    Une fois les idées mises au clair, j'ai fait un storyboard pour illustrer le déroulé de la progression du joueur<br>
+                                    <img loading="lazy" src="https://cdna.artstation.com/p/assets/images/images/047/572/044/large/daminator-4113-storyboard.jpg?1647921916" alt="storyboard" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    J'ai ensuite fait la liste des modèles dont j'aurais besoin, et je les ai faits sur Blender.<br>
+                                    J'ai également fait le post-process qui donnera en grande majorité l'aspect final au jeu.<br>
+                                    Avec le storyboard, le développement a été assez rapide, j'ai pu faire la programmation de chaque élément étape par étape et comme la progression du joueur est linéaire, je devais simplement placer quelques trigger-box sur son chemin.<br>
+                                    <img loading="lazy" src="https://cdna.artstation.com/p/assets/images/images/047/571/878/large/daminator-4113-highresscreenshot00008.jpg?1647921451" alt="screenshot editor" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    Je me suis ensuite occupé de la partie sonore, et me suis encore une fois beaucoup servi de <a href="https://freesound.org" target="_blank">freesound.org</a><br>
+                                    Pour éviter les menus et plonger le joueur directement dans l'ambiance, j'ai fait en sorte que le jeu boucle sur lui-même.
+                                </p>
+                            </div>
                         </div>
                         <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
@@ -333,14 +367,46 @@
                             </div>
                             <img loading="lazy" src="https://media.forgecdn.net/attachments/1003/713/map_icon.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
                         </div>
-                        <!-- En savoir plus 
+                        <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                                <p>
-                                    Empty.
+                            <!-- Mécaniques -->
+                            <button class="toggle-details"><h3 style="margin: 0">Mécaniques</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    BUT DU JEU :<br>
+                                    Un artéfact a été volé à la statue du dieu antique, celui-ci mécontent, confine le village dans une boucle temporelle jusqu'à ce que l'artéfact lui soit rendu <i>(boucle ressenti uniquement par le/s joueurs)</i><br>
+                                    <br>
+                                    MÉCANIQUES DE JEU :<br>
+                                    Le joueur a un temps donné (10 min) pour trouver des indices pour explorer les lieux et trouver la cachette de l'artéfact.<br>
+                                    Au bout de ces 10 minutes, le temps est rembobiné et on recommence la même journée.<br>
+                                    La boucle oblige le joueur à organiser ses recherches et ses ressources pour récolter le plus d'informations, et déterminer un plan d'action lui permettant d'aller chercher l'artefact à la fin.
                                 </p>
+                            </div>
+                            
+                            <!-- Conception -->
+                            <button class="toggle-details"><h3 style="margin: 0">Conception</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    Sur les 5 jours, il y en a facilement 2 où nous nous sommes uniquement penchés sur quel thème choisir, puis quel type de jeu on voulait faire, et enfin après avoir trouvé une idée, on a posé sur papier toutes les idées de mécaniques et de déroulé du jeu.<br>
+                                    Ça nous aura pris pas mal de temps, mais c'était nécessaire pour la suite, et le fait d'avoir ce plan déjà établi nous a permis de faire les choses étape par étape sans prise de tête.<br>
+                                    <br>
+                                    La première étape était de faire le build de la map, j'ai commencé par faire un petit dessin de ce à quoi pouvait ressembler notre map<br>
+                                    <img loading="lazy" src="images/projects/the_stolen_artifact/schema.png" alt="schema" data-width="25" class="img manual-resize image bottom">
+                                    <br>
+                                    Puis je me suis occupé de faire tout le terraforming de la map qui sera notre décor de fond.<br>
+                                    Ensuite, on a découpé chaque zone pour organiser notre village<br>
+                                    <img loading="lazy" src="images/projects/the_stolen_artifact/map.webp" data-full="images/projects/the_stolen_artifact/map.png" alt="village organisation" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    Et pendant que mon coéquipier s'occupait principalement de la partie technique, je m'affairais sur la partie Build du village ainsi que sur le Resource Pack, avec notamment la modélisation des différents dieux du jeu.<br>
+                                    <img loading="lazy" src="images/projects/the_stolen_artifact/gods.png" alt="gods" data-width="30" class="img manual-resize image bottom">
+                                    Quand le build fut fini, je me suis également mis sur la programmation des différentes features, notamment le système de téléportation par statue, ou encore l'affichage des textes animés. <i>(la liste est assez floue étant donné qu'on a travaillé ensemble sur le projet entier)</i><br><br>
+                                    On aura quand même fini dans les temps, mais sans avoir réellement pu faire tester la map en amont, et cela nous aurait permis de nous rendre compte qu'une étape dans le jeu était trop longue.
+                                    <br>
+                                    Mais elle a été corrigé par la suite.
+                                </p>
+                            </div>
                         </div>
-                        -->
                         <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
@@ -373,14 +439,29 @@
                             </div>
                             <img loading="lazy" src="images/projects/glitched_maze/glitched_maze_thumbnail.webp" data-full="images/projects/glitched_maze/glitched_maze_thumbnail.png" alt="GlitchedMaze thumbnail" data-width="20" class="img manual-resize image left">
                         </div>
-                        <!-- En savoir plus
+                        <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                            <p>
-                                Empty.
+                            <!-- Mécaniques -->
+                            <h3 style="margin: 0"><br>Mécaniques<br></h3>
+                            <p style="text-align: justify;">
+                                À chaque début de partie, un labyrinthe est généré parmi 2 patterns de génération différents <i>(l'un offrant un chemin plus linéaire mais garantissant des obstacles sur la route, l'autre offrant une plus grande variété d'intersections)</i><br>
+                                <br>
+                                Le joueur dispose ensuite de 15 secondes pour observer un plan du labyrinthe généré avec les passages piégés.<br>
+                                <br>
+                                Dès que l'observation est passée, sa progression va se faire automatiquement, mais à chaque croisement, il devra décider dans un court temps imparti dans quelle direction aller, sinon quoi il ira tout droit par défaut.<br>
+                                Le but ici est de jouer sur la pression, de prendre des décisions rapidement.<br>
+                                <br>
+                                Voici la liste des différents obstacles que le joueur va rencontrer, un échec pour n'importe lequel de ces obstacles signifie la fin de la partie :<br>
+                                <br>
+                                - À chaque intersection, il va avoir une chance de voir apparaître un petit calcul mental, et devra décider parmi 3 réponses possibles laquelle est la bonne, le tout dans un court temps imparti.<br>
+                                <br>
+                                - Si le joueur arrive dans une impasse, il devra effectuer un QTE comprenant 3 lettres aléatoires du clavier.<br>
+                                <br>
+                                - Dans les grandes lignes droites, il pourra rencontrer soit les parois de murs qui se ferment, auquel cas il devra alterner rapidement entre 2 touches pour s'en sortir.<br>
+                                Ou bien un muret va apparaître rapidement sur le sol ou l'un des murs, et le joueur devra presser une touche rapidement pour faire disparaître ce muret et continuer.
                             </p>
                         </div>
-                         -->
                         <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
@@ -412,14 +493,22 @@
                             </div>
                             <img loading="lazy" src="images/projects/ue4pong/ue4pong_thumbnail.webp" data-full="images/projects/ue4pong/ue4pong_thumbnail.png" alt="UE4pong thumbnail" data-width="60" class="img manual-resize image right">
                         </div>
-                        <!-- En savoir plus
+                        <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                            <p>
-                                Empty.
+                            <!-- Mécaniques -->
+                            <h3 style="margin: 0"><br>Mécaniques<br></h3>
+                            <p style="text-align: justify;">
+                                L'idée que j'ai eue pour revisiter le jeu, c'était d'intégrer une nouvelle façon de jouer originale tout en gardant l'essence du jeu.<br>
+                                <br>
+                                Je les ai donc organisés en différents modes de jeu :<br><br>
+                                - Le mode "Classic" (qui m'a servi de base pour le reste des modes, et même s'il ne réinventait pas le jeu, je voulais quand même le laisser par principe)<br><br>
+                                - Le mode "Exchange", où le but est de faire le plus d'échanges de balle possible.<br><br>
+                                - Le mode "Dodge", où le but est de faire l'inverse du jeu, à savoir éviter la balle, et celui qui la touche, perd.<br><br>
+                                - Le mode "x2 bars", où le joueur contrôle une barre horizontale et une barre verticale, et où tous les murs sont éliminatoires.<br><br>
+                                - Le mode "Solo", qui se joue tout seul et où le but est de conserver la balle en jeu le plus longtemps possible (toutefois, toutes les 10 secondes un malus aléatoires viendra pimenter la partie)
                             </p>
                         </div>
-                         -->
                         <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
@@ -527,11 +616,24 @@
                         <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                            <p style="text-align: justify;">
-                                <i><i style="font-size: 1.8em;">“</i>Dans ce tutoriel, on nous apprenait à utiliser Blender pour faire la map du jeu, faire ses assets, etc... le tout en Low Poly. À utiliser MakeHuman pour faire les personnages, leur squelette et le rigging. Et aussi à utiliser le moteur Unreal Engine 4 avec la programmation en Blueprint.
-                                <br><br>
-                                C'est juste après ce projet que j'ai voulu me lancer dans le développement de mon propre jeu <a href="#FTB" class="scroll">FindTheButton</a> en reprenant le style Low Poly utilisé dans Kawai Slender<i style="font-size: 1.8em;">”</i></i>
-                            </p>
+                            <!-- Contexte -->
+                            <button class="toggle-details" id="FTB-contexte"><h3 style="margin: 0">Contexte</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    <i><i style="font-size: 1.8em;">“</i>Dans ce tutoriel, on nous apprenait à utiliser Blender pour faire la map du jeu, faire ses assets, etc... le tout en Low Poly. À utiliser MakeHuman pour faire les personnages, leur squelette et le rigging. Et aussi à utiliser le moteur Unreal Engine 4 avec la programmation en Blueprint.
+                                    <br><br>
+                                    C'est juste après ce projet que j'ai voulu me lancer dans le développement de mon propre jeu <a href="#FTB" class="scroll">FindTheButton</a> en reprenant le style Low Poly utilisé dans Kawai Slender<i style="font-size: 1.8em;">”</i></i>
+                                </p>
+                            </div>
+
+                            <!-- Mécaniques -->
+                            <button class="toggle-details"><h3 style="margin: 0">Mécaniques</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    Ici, on reprend la mécanique du jeu SlenderMan mais en version "mignonne" où le but est d'aller récupérer des cookies dans la map sans se faire attraper par le monstre.<br>
+                                    On dispose d'une lampe torche avec une batterie qui va s'éteindre si on l'utilise trop. Et d'une barre de stamina pour la course. À utiliser à bon escient donc.
+                                </p>
+                            </div>
                         </div>
                         <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
@@ -655,14 +757,29 @@
                             </div>
                             <img loading="lazy" src="https://archives.gunivers.net/wp-content/uploads/2020/10/connection.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
                         </div>
-                        <!-- En savoir plus 
+                        <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
                         <div class="details">
-                            <p style="text-align: justify;">
-                                <i><i style="font-size: 1.8em;">“</i>Empty.<i style="font-size: 1.8em;">”</i></i>
-                            </p>
+                            <!-- Mécaniques -->
+                            <button class="toggle-details"><h3 style="margin: 0">Mécaniques</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    Empty<br>
+                                    <img loading="lazy" src="images/template1.webp" data-full="images/template1.png" alt="template" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    Empty<br>
+                                    <img loading="lazy" src="images/template2.webp" data-full="images/template2.png" alt="template" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                </p>
+                            </div>
+                            
+                            <!-- Conception -->
+                            <button class="toggle-details"><h3 style="margin: 0">Conception</h3></button>
+                            <div class="details">
+                                <p style="text-align: justify;">
+                                    Empty
+                                </p>
+                            </div>
                         </div>
-                        -->
                         <!-- Galerie -->
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
