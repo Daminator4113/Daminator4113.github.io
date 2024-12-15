@@ -100,13 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const openLightbox = (img) => {
         currentImages = Array.from(document.querySelectorAll('.img')); // Toutes les images avec la class .img du portfolio
         currentIndex = currentImages.indexOf(img);
-        lightboxImg.src = img.src;
+        lightboxImg.src = img.dataset.full ? img.dataset.full : img.src; // Utilise l'URL de la version haute qualité si possible
         lightbox.style.display = 'flex';
     };
 
     const navigate = (direction) => {
         currentIndex = (currentIndex + direction + currentImages.length) % currentImages.length;
-        lightboxImg.src = currentImages[currentIndex].src;
+        const nextImage = currentImages[currentIndex];
+        lightboxImg.src = nextImage.dataset.full ? nextImage.dataset.full : nextImage.src; // Charge la version haute qualité si possible
     };
 
     const closeLightbox = () => {

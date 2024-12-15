@@ -68,7 +68,7 @@
             <div class="container">
                 <!-- image en arrière-plan -->
                 <div class="bg-img-container">
-                    <img src="images/header_bg.gif" alt="header_bg" class="background-image">
+                    <img loading="lazy" src="images/header_bg.gif" alt="header_bg" class="background-image">
                 </div>
                 <div class="bg-img-overlay"></div>
 
@@ -91,7 +91,7 @@
                     <!-- Find The Button -->
                     <div id="FTB" class="project">
                         <div class="project-intro">
-                            <img src="images/projects/find_the_button/ftb_thumbnail.png" alt="ftb_thumbnail" data-width="40" class="img manual-resize image left">
+                            <img loading="lazy" src="images/projects/find_the_button/ftb_thumbnail.webp" data-full="images/projects/find_the_button/ftb_thumbnail.png" alt="ftb_thumbnail" data-width="40" class="img manual-resize image left">
                             <div class="description">
                                 <p>
                                     <a href="https://gamejolt.com/games/find_the_button/818614" target="_blank" class="btn-link btn-anim gamejolt">▶ FindTheButton</a>
@@ -142,20 +142,20 @@
                                     Pour certains niveaux, je devais également m'occuper de leur mécanique.<br>
                                     <br>
                                     Je vais prendre pour exemple le niveau 12 (qui se passe dans une sorte de temple maya) et décrire toutes les étapes du game design de ce niveau.<br>
-                                    <img src="https://cdna.artstation.com/p/assets/images/images/033/760/574/large/daminator-4113-level12-design.jpg?1610491331" alt="Level12 map" data-width="40" class="img manual-resize image bottom">
+                                    <img loading="lazy" src="https://cdna.artstation.com/p/assets/images/images/033/760/574/large/daminator-4113-level12-design.jpg?1610491331" data-full="https://cdna.artstation.com/p/assets/images/images/033/760/574/large/daminator-4113-level12-design.jpg?1610491331" alt="Level12 map" data-width="40" class="img manual-resize image bottom">
                                     <br>
                                     Le bouton n'est pas accessible immédiatement, il faut résoudre une série de petites énigmes pour ouvrir une porte derrière laquelle se trouve le bouton.<br>
                                     Pour cela j'ai dû réfléchir à une façon de faire comprendre au joueur les différentes étapes de progression.<br>
                                     Et ça commence par l'exploration. En explorant, le joueur va trouver 3 salles :<br>
                                     <br>
                                     • Une salle avec une table au milieu<br>
-                                    <img src="images/projects/find_the_button/middle_room.png" alt="Level12 middle room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <img loading="lazy" src="images/projects/find_the_button/middle_room.webp" data-full="images/projects/find_the_button/middle_room.png" alt="Level12 middle room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
                                     • Une petite salle avec 3 supports<br>
-                                    <img src="images/projects/find_the_button/small_room.png" alt="Level12 small room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <img loading="lazy" src="images/projects/find_the_button/small_room.webp" data-full="images/projects/find_the_button/small_room.png" alt="Level12 small room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
                                     • Une grande salle avec un mur disposant de 4 cubes rotatifs avec des totems sur chaque face et au-dessus de chaque cube, un chiffre (initialement sur 0), mais aussi dans un creux du mur, un rocher avec également des totems sur chaque face, que le joueur peut déplacer.<br>
-                                    <img src="images/projects/find_the_button/big_room.png" alt="Level12 big room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <img loading="lazy" src="images/projects/find_the_button/big_room.webp" data-full="images/projects/find_the_button/big_room.png" alt="Level12 big room" data-width="25" class="img manual-resize image left" style="margin: 20px;">
                                     Il va aussi remarquer sur les murs et plafond, des petits totems avec différentes expressions, qui, en cliquant dessus, vont émettre un son et se mettre à briller.<br>
-                                    <img src="images/projects/find_the_button/totem.gif" alt="Level12 totem" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <img loading="lazy" src="images/projects/find_the_button/totem.gif" alt="Level12 totem" data-width="25" class="img manual-resize image left" style="margin: 20px;">
                                     <br>
                                     C'est sur ce point que je veux amener le joueur, lui faire comprendre que s'il allume un totem, la valeur au-dessus de l'un des cubes rotatifs de la grande salle va changer.<br>
                                     En fait l'idée c'est qu'au fur et à mesure de son exploration, et au vu du principe du jeu, le joueur va être amené à essayer plein de choses mais surtout à repasser plusieurs fois aux mêmes endroits. Et donc en cliquant sans trop comprendre sur les totems, il devrait finir par remarquer que les chiffres changent dans la salle principale.<br>
@@ -165,19 +165,19 @@
                                     <br>
                                     Mais je ne voulais pas que ça soit aussi "simple", et je voulais mettre des passages secrets et des pièges dans le niveau, pour être le plus dans le thème du temple maya.<br>
                                     Donc quand le joueur aura trouvé tous les totems accessibles, et qu'il aura fait correspondre la bonne expression au bon chiffre, il va se rendre compte qu'il ne se passe rien de plus.<br>
-                                    Je crée une forme de frustration, pour essayer de faire comprendre au joueur qu'il lui manque une donnée, et c'est le cas, de cette façon il devrait se rendre compte qu'il dispose d'un rocher totem pouvant être déplacé (il peut très bien s'en être rendu compte avant par ailleurs)<br>
+                                    Je crée une forme de frustration, pour essayer de faire comprendre au joueur qu'il lui manque une donnée, et c'est le cas, de cette façon il devrait se rendre compte qu'il dispose d'un rocher totem pouvant être déplacé (il peut très bien s'en être rendu compte avant par ailleurs).<br>
                                     Et ce rocher, il va essayer d'en faire quelque chose, par exemple de le mettre dans la petite salle sur l'un des 3 supports (qui sont là pour faire comprendre que le cube rentre parfaitement dans l'emplacement, et que le fait que le joueur n'ait qu'un seul cube, implique qu'il doive en trouver 2 autres)<br>
                                     Mais il peut aussi se rendre compte que dans la salle avec la table, il y a également un support dans un des coins de la pièce, et en plaçant le cube dessus, il va ouvrir l'un des murs, dévoilant un passage secret.<br>
-                                    <img src="images/projects/find_the_button/secret_passage.png" alt="Level12 secret passage" data-width="40" class="img manual-resize image bottom">
+                                    <img loading="lazy" src="images/projects/find_the_button/secret_passage.webp" data-full="images/projects/find_the_button/secret_passage.png" alt="Level12 secret passage" data-width="40" class="img manual-resize image bottom">
                                     <br>
                                     Ce passage secret donne accès à un autre cube, mais aussi à d'autres totems muraux, confirmant au joueur le fait qu'il n'avait pas accès à tout et que sa solution était peut-être la bonne au final.<br>
                                     <br>
                                     Il ne reste plus qu'un seul cube à trouver au joueur pour pouvoir les placer sur chaque support, et en cherchant ce dernier, il le trouvera à l'extérieur du temple. (L'ordre de découverte de chaque étape n'a pas d'importance, le joueur peut très bien ouvrir le passage secret avant de comprendre comment fonctionnent les totems).<br>
                                     C'est là que la petite salle trouve son utilité, en réunissant les 3 cubes, une dernière porte cachée va s'ouvrir pour révéler un énorme totem illuminable au sol. Sa taille a pour but de faire comprendre, si ça n'était pas le cas, que ces totems ont une importance et ne sont pas juste là pour décorer.<br>
-                                    <img src="images/projects/find_the_button/big_totem.png" alt="Level12 big totem" data-width="40" class="img manual-resize image bottom">
+                                    <img loading="lazy" src="images/projects/find_the_button/big_totem.webp" data-full="images/projects/find_the_button/big_totem.png" alt="Level12 big totem" data-width="40" class="img manual-resize image bottom">
                                     <br>
                                     Si le joueur réussit tout ça, la porte finale (le mur avec les chiffres) va s'ouvrir, révélant le trésor de ce temple et par la même occasion le bouton pour passer au niveau suivant.<br>
-                                    <img src="images/projects/find_the_button/final_room.png" alt="final_room map" data-width="40" class="img manual-resize image bottom">
+                                    <img loading="lazy" src="images/projects/find_the_button/final_room.webp" data-full="images/projects/find_the_button/final_room.png" alt="final_room map" data-width="40" class="img manual-resize image bottom">
                                     <br>
                                     <br>
                                     Après avoir fait ce processus de game design pour les 16 niveaux (avec plus ou moins de complexité pour chaque), j'ai commencé à ajouter les effets sonores et les musiques.<br>
@@ -205,19 +205,19 @@
                             <div class="creation">
                                 <!-- Groupe d'images organisé en tiles -->
                                 <div class="image-group image bottom">
-                                    <img src="https://cdnb.artstation.com/p/assets/images/images/033/760/971/large/daminator-4113-level14.jpg?1610491985" alt="Level 14" class="img thumbnail" data-group="1">
-                                    <img src="images/projects/find_the_button/Level3.png" alt="Level 3" class="img thumbnail" data-group="1">
-                                    <img src="https://cdnb.artstation.com/p/assets/images/images/033/760/927/large/daminator-4113-level13.jpg?1610491923" alt="Level 13" class="img thumbnail" data-group="1">
-                                    <img src="https://cdnb.artstation.com/p/assets/images/images/033/760/553/large/daminator-4113-level12.jpg?1610491281" alt="Level 12" class="img thumbnail" data-group="1">
-                                    <img src="images/projects/find_the_button/Level1.png" alt="Level 1" class="img thumbnail" data-group="1">
-                                    <img src="https://cdna.artstation.com/p/assets/images/images/033/761/050/large/daminator-4113-level16.jpg?1610492089.png" alt="Level 16" class="img thumbnail" data-group="1">
-                                    <img src="https://cdna.artstation.com/p/assets/images/images/033/761/308/large/daminator-4113-level15.jpg?1610492786" alt="Level 15" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/033/760/971/large/daminator-4113-level14.jpg?1610491985" data-full="https://cdnb.artstation.com/p/assets/images/images/033/760/971/large/daminator-4113-level14.jpg?1610491985" alt="Level 14" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/find_the_button/Level3.webp" data-full="images/projects/find_the_button/Level3.png" alt="Level 3" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/033/760/927/large/daminator-4113-level13.jpg?1610491923" data-full="https://cdnb.artstation.com/p/assets/images/images/033/760/927/large/daminator-4113-level13.jpg?1610491923" alt="Level 13" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/033/760/553/large/daminator-4113-level12.jpg?1610491281" data-full="ation.com/p/assets/images/images/033/760/553/large/daminator-4113-level12.jpg?1610491281" alt="Level 12" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/find_the_button/Level1.png" alt="Level 1" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://cdna.artstation.com/p/assets/images/images/033/761/050/large/daminator-4113-level16.jpg?1610492089.png" data-full="https://cdna.artstation.com/p/assets/images/images/033/761/050/large/daminator-4113-level16.jpg?1610492089.png" alt="Level 16" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://cdna.artstation.com/p/assets/images/images/033/761/308/large/daminator-4113-level15.jpg?1610492786" data-full="https://cdna.artstation.com/p/assets/images/images/033/761/308/large/daminator-4113-level15.jpg?1610492786" alt="Level 15" class="img thumbnail" data-group="1">
                                 </div>
                             </div>
                             <!-- Groupe d'images organisé en lignes -->
                             <div class="image-group-row">
-                                <img src="https://cdnb.artstation.com/p/assets/images/images/033/760/549/original/daminator-4113-temple.gif?1610491274" alt="Level 12 temple gif" class="img image left" data-group="1">
-                                <img src="https://i.gjcdn.net/public-data/games/13/114/818614/media/game-description/pipes-wipt4ed9.gif" alt="Level 16 pipes gif" class="img image right" data-group="1">
+                                <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/033/760/549/original/daminator-4113-temple.gif?1610491274" alt="Level 12 temple gif" class="img image left" data-group="1">
+                                <img loading="lazy" src="https://i.gjcdn.net/public-data/games/13/114/818614/media/game-description/pipes-wipt4ed9.gif" alt="Level 16 pipes gif" class="img image right" data-group="1">
                             </div>
                             <p>Pour plus de visuels, je vous invite à visiter la page <a href="https://daminator4113.artstation.com/albums/2549901" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a> du projet.</p>
                         </div>
@@ -246,7 +246,7 @@
                                     <i>-2022</i>
                                 </p>
                             </div>
-                            <img src="images/projects/tourment/tourment_thumbnail.png" alt="tourment_thumbnail" data-width="35" class="img manual-resize image right">
+                            <img loading="lazy" src="images/projects/tourment/tourment_thumbnail.webp" data-full="images/projects/tourment/tourment_thumbnail.png" alt="tourment_thumbnail" data-width="35" class="img manual-resize image right">
                         </div>
                         <!-- En savoir plus -->
                         <button class="toggle-details">→ En savoir plus ←</button>
@@ -262,10 +262,10 @@
                                 <iframe class="image bottom" width="720" height="480" src="https://www.youtube.com/embed/eIMVAcMeVVI?si=eAOmHFxkwIgC9LP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="youtube video"></iframe>
                                 <!-- Groupe d'images organisé en lignes -->
                                 <div class="image-group-row">
-                                    <img src="https://cdnb.artstation.com/p/assets/images/images/047/572/215/large/daminator-4113-highresscreenshot00000.jpg?1647922529" alt="screenshot 1" data-width="100" class="img manual-resize image left" data-group="1">
-                                    <img src="https://cdnb.artstation.com/p/assets/images/images/047/572/635/large/daminator-4113-screenshot005.jpg?1647923880" alt="screenshot 2" data-width="100" class="img manual-resize image right" data-group="1">
+                                    <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/047/572/215/large/daminator-4113-highresscreenshot00000.jpg?1647922529" data-full="https://cdnb.artstation.com/p/assets/images/images/047/572/215/large/daminator-4113-highresscreenshot00000.jpg?1647922529" alt="screenshot 1" data-width="100" class="img manual-resize image left" data-group="1">
+                                    <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/047/572/635/large/daminator-4113-screenshot005.jpg?1647923880" data-full="https://cdnb.artstation.com/p/assets/images/images/047/572/635/large/daminator-4113-screenshot005.jpg?1647923880" alt="screenshot 2" data-width="100" class="img manual-resize image right" data-group="1">
                                 </div>
-                                <img src="https://cdnb.artstation.com/p/assets/images/images/047/572/457/large/daminator-4113-standing.jpg?1647923451" alt="standing" data-width="25" class="img manual-resize image bottom" data-group="1">
+                                <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/047/572/457/large/daminator-4113-standing.jpg?1647923451" alt="standing" data-width="25" class="img manual-resize image bottom" data-group="1">
                             </div>
                             <p>Pour plus de visuels, je vous invite à visiter la page <a href="https://daminator4113.artstation.com/albums/5755783" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a> du projet.</p>
                         </div>
@@ -287,7 +287,7 @@
                                     <i>-2024</i>
                                 </p>
                             </div>
-                            <img src="images/projects/ludumdare56/ludumdare56_thumbnail.png" alt="ludumdare56_thumbnail" data-width="25" class="img manual-resize image left">
+                            <img loading="lazy" src="images/projects/ludumdare56/ludumdare56_thumbnail.png" alt="ludumdare56_thumbnail" data-width="25" class="img manual-resize image left">
                         </div>
                         <!-- En savoir plus
                         <button class="toggle-details">→ En savoir plus ←</button>
@@ -301,10 +301,10 @@
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
                             <div class="creation">
-                                <img src="images/projects/ludumdare56/main_menu.png" alt="main menu" data-width="50" class="img manual-resize image bottom" data-group="1">
+                                <img loading="lazy" src="images/projects/ludumdare56/main_menu.png" alt="main menu" data-width="50" class="img manual-resize image bottom" data-group="1">
                                 <div class="image-group">
-                                    <img src="images/projects/ludumdare56/lightbulb_awake_01.png" alt="lightbulb_awake_01" class="img thumbnail image left" data-group="1">
-                                    <img src="images/projects/ludumdare56/mouse_awake_02.png" alt="mouse_awake_02" class="img thumbnail image right" data-group="1">
+                                    <img loading="lazy" src="images/projects/ludumdare56/lightbulb_awake_01.png" alt="lightbulb_awake_01" class="img thumbnail image left" data-group="1">
+                                    <img loading="lazy" src="images/projects/ludumdare56/mouse_awake_02.png" alt="mouse_awake_02" class="img thumbnail image right" data-group="1">
                                 </div>
                             </div>
                         </div>
@@ -331,7 +331,7 @@
                                     <i>-2024</i>
                                 </p>
                             </div>
-                            <img src="https://media.forgecdn.net/attachments/1003/713/map_icon.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
+                            <img loading="lazy" src="https://media.forgecdn.net/attachments/1003/713/map_icon.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
                         </div>
                         <!-- En savoir plus 
                         <button class="toggle-details">→ En savoir plus ←</button>
@@ -347,11 +347,11 @@
                             <div class="creation">
                                 <!-- Groupe d'images organisé en lignes -->
                                 <div class="image-group image bottom">
-                                    <img src="https://media.forgecdn.net/attachments/1003/714/1.png" alt="screenshot 1" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
-                                    <img src="https://media.forgecdn.net/attachments/1003/715/2.png" alt="screenshot 2" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
-                                    <img src="https://media.forgecdn.net/attachments/1003/716/3.png" alt="screenshot 3" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
-                                    <img src="https://media.forgecdn.net/attachments/1003/717/4.png" alt="screenshot 4" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
-                                    <img src="https://media.forgecdn.net/attachments/1003/718/5.png" alt="screenshot 5" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
+                                    <img loading="lazy" src="https://media.forgecdn.net/attachments/1003/714/1.png" alt="screenshot 1" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
+                                    <img loading="lazy" src="https://media.forgecdn.net/attachments/1003/715/2.png" alt="screenshot 2" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
+                                    <img loading="lazy" src="https://media.forgecdn.net/attachments/1003/716/3.png" alt="screenshot 3" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
+                                    <img loading="lazy" src="https://media.forgecdn.net/attachments/1003/717/4.png" alt="screenshot 4" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
+                                    <img loading="lazy" src="https://media.forgecdn.net/attachments/1003/718/5.png" alt="screenshot 5" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
                                 </div>
                             </div>
                         </div>
@@ -371,7 +371,7 @@
                                     <i>-2019</i>
                                 </p>
                             </div>
-                            <img src="images/projects/glitched_maze/glitched_maze_thumbnail.png" alt="GlitchedMaze thumbnail" data-width="20" class="img manual-resize image left">
+                            <img loading="lazy" src="images/projects/glitched_maze/glitched_maze_thumbnail.webp" data-full="images/projects/glitched_maze/glitched_maze_thumbnail.png" alt="GlitchedMaze thumbnail" data-width="20" class="img manual-resize image left">
                         </div>
                         <!-- En savoir plus
                         <button class="toggle-details">→ En savoir plus ←</button>
@@ -387,11 +387,11 @@
                             <div class="creation">
                                 <iframe class="image bottom" width="720" height="480" src="https://www.youtube.com/embed/6drt3sJmyI0?si=3_XjWMfNHrI4MeWj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="youtube video"></iframe>
                                 <!-- Groupe d'images organisé en lignes -->
-                                <div class="image-group-row">
-                                    <img src="images/projects/glitched_maze/main_menu.png" alt="main menu" data-width="100" class="img manual-resize image left" data-group="1">
-                                    <img src="images/projects/glitched_maze/screenshot3.png" alt="screenshot 3" data-width="100" class="img manual-resize image right" data-group="1">
+                                <div class="image-group-row" style="grid-template-columns: repeat(2, minmax(600px, 1fr));">
+                                    <img loading="lazy" src="images/projects/glitched_maze/main_menu.webp" data-full="images/projects/glitched_maze/main_menu.png" alt="main menu" data-width="100" class="img manual-resize image left" data-group="1">
+                                    <img loading="lazy" src="images/projects/glitched_maze/screenshot3.webp" data-full="images/projects/glitched_maze/screenshot3.png" alt="screenshot 3" data-width="100" class="img manual-resize image right" data-group="1">
                                 </div>
-                                <img src="images/projects/glitched_maze/screenshot1.png" alt="screenshot 1" data-width="50" class="img manual-resize image bottom" data-group="1">
+                                <img loading="lazy" src="images/projects/glitched_maze/screenshot1.webp" data-full="images/projects/glitched_maze/screenshot1.png" alt="screenshot 1" data-width="45" class="img manual-resize image bottom" data-group="1">
                             </div>
                         </div>
                     </div>
@@ -410,7 +410,7 @@
                                     <i>-2019</i>
                                 </p>
                             </div>
-                            <img src="images/projects/ue4pong/ue4pong_thumbnail.png" alt="UE4pong thumbnail" data-width="60" class="img manual-resize image right">
+                            <img loading="lazy" src="images/projects/ue4pong/ue4pong_thumbnail.webp" data-full="images/projects/ue4pong/ue4pong_thumbnail.png" alt="UE4pong thumbnail" data-width="60" class="img manual-resize image right">
                         </div>
                         <!-- En savoir plus
                         <button class="toggle-details">→ En savoir plus ←</button>
@@ -424,11 +424,11 @@
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
                             <div class="creation">
-                                <img src="https://i.gjcdn.net/public-data/games/6/131/403631/media/game-description/5d09146018b8f-x2cwhtut.gif" alt="standing" data-width="50" class="img manual-resize image bottom" data-group="1">
+                                <img loading="lazy" src="https://i.gjcdn.net/public-data/games/6/131/403631/media/game-description/5d09146018b8f-x2cwhtut.gif" alt="standing" data-width="50" class="img manual-resize image bottom" data-group="1">
                                 <!-- Groupe d'images organisé en lignes -->
                                 <div class="image-group-row">
-                                    <img src="images/projects/ue4pong/main_menu.png" alt="main menu" data-width="100" class="img manual-resize image left" data-group="1">
-                                    <img src="https://m.gjcdn.net/game-screenshot/1400/1840695-gdryufyw-v4.webp" alt="screenshot 2" data-width="100" class="img manual-resize image right" data-group="1">
+                                    <img loading="lazy" src="images/projects/ue4pong/main_menu.webp" data-full="images/projects/ue4pong/main_menu.png" alt="main menu" data-width="100" class="img manual-resize image left" data-group="1">
+                                    <img loading="lazy" src="https://m.gjcdn.net/game-screenshot/1400/1840695-gdryufyw-v4.webp" alt="screenshot 2" data-width="100" class="img manual-resize image right" data-group="1">
                                 </div>
                             </div>
                         </div>
@@ -441,7 +441,7 @@
                     <!-- Dimension -->
                     <div id="dimension" class="project">
                         <div class="project-intro">
-                            <img src="images/projects/dimension/dimension_thumbnail.png" alt="dimension thumbnail" data-width="40" class="img manual-resize image right">
+                            <img loading="lazy" src="images/projects/dimension/dimension_thumbnail.webp" data-full="images/projects/dimension/dimension_thumbnail.png" alt="dimension thumbnail" data-width="40" class="img manual-resize image right">
                             <div class="description">
                                 <p>
                                     <a href="https://www.mediafire.com/file/2hqu43xth0xzc24/Dimension+v0.0.1.2.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ Dimension</a>
@@ -476,7 +476,7 @@
                     <!-- Blue Ball -->
                     <div id="blueball" class="project">
                         <div class="project-intro">
-                            <img src="images/projects/blueball/blueball_thumbnail.png" alt="blueball thumbnail" data-width="40" class="img manual-resize image left">
+                            <img loading="lazy" src="images/projects/blueball/blueball_thumbnail.webp" data-full="images/projects/blueball/blueball_thumbnail.png" alt="blueball thumbnail" data-width="40" class="img manual-resize image left">
                             <div class="description">
                                 <p>
                                     <a href="https://www.mediafire.com/file/84rgiywd68w1jb8/BlueBall+v0.0.1.6.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ Blue Ball</a>
@@ -513,7 +513,7 @@
                     <!-- Kawai Slender -->
                     <div id="KawaiSlender" class="project">
                         <div class="project-intro">
-                            <img src="images/projects/kawai_slender/kawai_slender_thumbnail.png" alt="kawai slender thumbnail" data-width="40" class="img manual-resize image right">
+                            <img loading="lazy" src="images/projects/kawai_slender/kawai_slender_thumbnail.webp" data-full="images/projects/kawai_slender/kawai_slender_thumbnail.png" alt="kawai slender thumbnail" data-width="40" class="img manual-resize image right">
                             <div class="description">
                                 <p>
                                     <a href="https://www.mediafire.com/file/dacfipu273qdftk/Kawai_Slender_v1.0.0.0.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ Kawai Slender</a>
@@ -539,9 +539,9 @@
                             <div class="creation">
                                 <!-- Groupe d'images organisé en tiles -->
                                 <div class="image-group image bottom">
-                                    <img src="images/projects/kawai_slender/world_1.png" alt="world_1" class="img thumbnail" data-group="1">
-                                    <img src="images/projects/kawai_slender/world_3.png" alt="world_3" class="img thumbnail" data-group="1">
-                                    <img src="images/projects/kawai_slender/slender.png" alt="slender" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/kawai_slender/world_1.webp" data-full="images/projects/kawai_slender/world_1.png" alt="world_1" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/kawai_slender/world_3.webp" data-full="images/projects/kawai_slender/world_3.png" alt="world_3" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/kawai_slender/slender.webp" data-full="images/projects/kawai_slender/slender.png" alt="slender" class="img thumbnail" data-group="1">
                                 </div>
                             </div>
                         </div>
@@ -550,7 +550,7 @@
                     <!-- Mon Premier Environnement 3D -->
                     <div id="Mon1erEnvironnement3D" class="project">
                         <div class="project-intro">
-                            <img src="images/projects/Mon_1er_Environnement_3D/thumbnail.png" alt="Mon1erEnvironnement3D thumbnail" data-width="40" class="img manual-resize image left">
+                            <img loading="lazy" src="images/projects/Mon_1er_Environnement_3D/thumbnail.webp" data-full="images/projects/Mon_1er_Environnement_3D/thumbnail.png" alt="Mon1erEnvironnement3D thumbnail" data-width="40" class="img manual-resize image left">
                             <div class="description">
                                 <p>
                                     <a href="https://www.mediafire.com/file/0fbsl4b9bwn4wg6/Mon_1er_Environnement_3D.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ Mon 1er Environnement 3D</a>
@@ -575,9 +575,9 @@
                             <div class="creation">
                                 <!-- Groupe d'images organisé en tiles -->
                                 <div class="image-group image bottom">
-                                    <img src="images/projects/Mon_1er_Environnement_3D/lvl1.png" alt="lvl1" class="img thumbnail" data-group="1">
-                                    <img src="images/projects/Mon_1er_Environnement_3D/lvl2.png" alt="lvl2" class="img thumbnail" data-group="1">
-                                    <img src="images/projects/Mon_1er_Environnement_3D/lvl3-2.png" alt="lvl3-2" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/Mon_1er_Environnement_3D/lvl1.webp" data-full="images/projects/Mon_1er_Environnement_3D/lvl1.png" alt="lvl1" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/Mon_1er_Environnement_3D/lvl2.webp" data-full="images/projects/Mon_1er_Environnement_3D/lvl2.png" alt="lvl2" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="images/projects/Mon_1er_Environnement_3D/lvl3-2.webp" data-full="images/projects/Mon_1er_Environnement_3D/lvl3-2.png" alt="lvl3-2" class="img thumbnail" data-group="1">
                                 </div>
                             </div>
                         </div>
@@ -586,7 +586,7 @@
                     <!-- zBrique -->
                     <div id="zBrique" class="project">
                         <div class="project-intro">
-                            <img src="images/projects/zBrique/thumbnail.png" alt="zBrique thumbnail" data-width="30" class="img manual-resize image left">
+                            <img loading="lazy" src="images/projects/zBrique/thumbnail.webp" data-full="images/projects/zBrique/thumbnail.png" alt="zBrique thumbnail" data-width="30" class="img manual-resize image left">
                             <div class="description">
                                 <p>
                                     <a href="https://www.mediafire.com/file/8fg199jogav6pov/zBrique_Alpha.zip/file" target="_blank" class="btn-link btn-anim gamejolt">▶ zBrique</a>
@@ -609,7 +609,7 @@
                         <button class="toggle-details">→ Galerie ←</button>
                         <div class="details">
                             <div class="creation">
-                                    <img src="images/projects/zBrique/zBrique.gif" alt="zBrique gif" class="img manual-resize image bottom" data-group="1">
+                                    <img loading="lazy" src="images/projects/zBrique/zBrique.gif" alt="zBrique gif" class="img manual-resize image bottom" data-group="1">
                                 </div>
                             </div>
                         </div>
@@ -653,7 +653,7 @@
                                     <i>-2021</i>
                                 </p>
                             </div>
-                            <img src="https://archives.gunivers.net/wp-content/uploads/2020/10/connection.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
+                            <img loading="lazy" src="https://archives.gunivers.net/wp-content/uploads/2020/10/connection.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
                         </div>
                         <!-- En savoir plus 
                         <button class="toggle-details">→ En savoir plus ←</button>
@@ -692,7 +692,7 @@
                                     <i>-2020</i>
                                 </p>
                             </div>
-                            <img src="https://archives.gunivers.net/wp-content/uploads/2020/05/pack1080px.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
+                            <img loading="lazy" src="https://archives.gunivers.net/wp-content/uploads/2020/05/pack1080px.png" alt="map thumbnail" data-width="35" class="img manual-resize image right">
                         </div>
                         <!-- En savoir plus 
                         <button class="toggle-details">→ En savoir plus ←</button>
@@ -708,9 +708,9 @@
                             <div class="creation">
                                 <!-- Groupe d'images organisé en tiles -->
                                 <div class="image-group image bottom">
-                                    <img src="https://altearn.xyz/wp-content/uploads/2020/12/2020-06-24_15.42.01.png" alt="screenshot1" class="img thumbnail" data-group="1">
-                                    <img src="https://altearn.xyz/wp-content/uploads/2020/12/2020-06-24_15.41.50.png" alt="screenshot2" class="img thumbnail" data-group="1">
-                                    <img src="https://altearn.xyz/wp-content/uploads/2020/12/2020-06-24_15.41.38.png" alt="screenshot3" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://altearn.xyz/wp-content/uploads/2020/12/2020-06-24_15.42.01.png" alt="screenshot1" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://altearn.xyz/wp-content/uploads/2020/12/2020-06-24_15.41.50.png" alt="screenshot2" class="img thumbnail" data-group="1">
+                                    <img loading="lazy" src="https://altearn.xyz/wp-content/uploads/2020/12/2020-06-24_15.41.38.png" alt="screenshot3" class="img thumbnail" data-group="1">
                                 </div>
                             </div>
                         </div>
@@ -742,9 +742,9 @@
                         </div>
 
                         <div class="image-group image bottom">
-                            <img src="https://cdnb.artstation.com/p/assets/images/images/054/667/861/large/daminator-4113-6-dark.jpg?1665068316" alt="Dark" class="img thumbnail" data-group="1">
-                            <img src="https://cdnb.artstation.com/p/assets/images/images/054/770/037/large/daminator-4113-9-music.jpg?1665338884" alt="Music" class="img thumbnail" data-group="1">
-                            <img src="https://cdna.artstation.com/p/assets/images/images/054/851/138/large/daminator-4113-11-winter.jpg?1665515981" alt="Winter" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/054/667/861/large/daminator-4113-6-dark.jpg?1665068316" alt="Dark" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/054/770/037/large/daminator-4113-9-music.jpg?1665338884" alt="Music" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdna.artstation.com/p/assets/images/images/054/851/138/large/daminator-4113-11-winter.jpg?1665515981" alt="Winter" class="img thumbnail" data-group="1">
                         </div>
                         <p>
                             Retrouvez plus de modèles sur la section dédiée aux modèles BlockBench sur mon <a href="https://daminator4113.artstation.com/albums/2549740" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
@@ -759,9 +759,9 @@
                         </div>
 
                         <div class="image-group image bottom">
-                            <img src="images/creations/3d_models/perry.png" alt="Perry" class="img thumbnail" data-group="1">
-                            <img src="images/creations/3d_models/skeleton.png" alt="Skeleton" class="img thumbnail" data-group="1">
-                            <img src="images/creations/3d_models/hat05.png" alt="Witch Hat" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="images/creations/3d_models/perry.webp" data-full="images/creations/3d_models/perry.png" alt="Perry" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="images/creations/3d_models/skeleton.webp" data-full="images/creations/3d_models/skeleton.png" alt="Skeleton" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="images/creations/3d_models/hat05.webp" data-full="images/creations/3d_models/hat05.png" alt="Witch Hat" class="img thumbnail" data-group="1">
                         </div>
                         <p>
                             Retrouvez plus de modèles sur la section dédiée aux modèles Blender sur mon <a href="https://daminator4113.artstation.com/albums/5464759" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
@@ -777,13 +777,13 @@
 
                         <!-- Dessins numériques -->
                         <h3 id="dessins_numeriques">Dessins Numériques</h3>
-                        <img src="https://cdnb.artstation.com/p/assets/images/images/081/240/747/large/daminator-4113-perdu-01.jpg?1729724594" alt="lost" data-width="50" class="img manual-resize image left">
+                        <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/081/240/747/large/daminator-4113-perdu-01.jpg?1729724594" alt="lost" data-width="50" class="img manual-resize image left">
                         <div class="image-group image bottom">
-                            <img src="https://cdnb.artstation.com/p/assets/images/images/081/312/445/large/daminator-4113-seul-04.jpg?1729908899" alt="bee" class="img thumbnail" data-group="1">
-                            <img src="https://cdna.artstation.com/p/assets/images/images/082/065/596/large/daminator-4113-cat-01.jpg?1731983724" alt="cat" class="img thumbnail" data-group="1">
-                            <img src="https://cdnb.artstation.com/p/assets/images/images/082/695/861/large/daminator-4113-travel-01.jpg?1733693784" alt="travel" class="img thumbnail" data-group="1">
-                            <img src="https://cdnb.artstation.com/p/assets/images/images/071/686/411/large/daminator-4113-abeille.jpg?1705698879" alt="alone" class="img thumbnail" data-group="1">
-                            <img src="https://cdnb.artstation.com/p/assets/images/images/071/699/593/large/daminator-4113-jdr-kitsune-2.jpg?1705745976" alt="kitsune" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/081/312/445/large/daminator-4113-seul-04.jpg?1729908899" alt="bee" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdna.artstation.com/p/assets/images/images/082/065/596/large/daminator-4113-cat-01.jpg?1731983724" alt="cat" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/082/695/861/large/daminator-4113-travel-01.jpg?1733693784" alt="travel" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/071/686/411/large/daminator-4113-abeille.jpg?1705698879" alt="alone" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="https://cdnb.artstation.com/p/assets/images/images/071/699/593/large/daminator-4113-jdr-kitsune-2.jpg?1705745976" alt="kitsune" class="img thumbnail" data-group="1">
                         </div>
                         <p>
                             Retrouvez plus de dessin sur la section dédiée sur mon <a href="https://daminator4113.artstation.com/albums/10499150" target="_blank" class="btn-link artstation"><img class="img-svg" src="https://cdn.artstation.com/assets/logo.svg" alt="ArtStation"></a>
@@ -791,19 +791,19 @@
                         
                         <!-- Dessins papier 
                         <h3 id="dessins_papier">Dessins Papier</h3>
-                        <img src="images/template2.png" alt="template" data-width="50" class="img manual-resize image right">
+                        <img loading="lazy" src="images/template2.png" data-full="template2.png" alt="template" data-width="50" class="img manual-resize image right">
                         <div class="image-group image bottom">
-                            <img src="images/template1.png" alt="template" class="img thumbnail" data-group="1">
+                            <img loading="lazy" src="images/template1.png" data-full="template1.png" alt="template" class="img thumbnail" data-group="1">
                         </div>
                         -->
 
                         <!-- Animations GIFs -->
                         <h3 id="animations">Animations GIFs faites sur <a href="https://folioscope.co" target="_blank">Folioscope.co</a></h3>
-                        <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-9004438C-77E6-4073-8B1C-66999A949507-0-1499156783.gif" alt="Blueball 4" data-width="50" class="img manual-resize image bottom">
+                        <img loading="lazy" src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-9004438C-77E6-4073-8B1C-66999A949507-0-1499156783.gif" alt="Blueball 4" data-width="50" class="img manual-resize image bottom">
                         <div class="image-group image bottom">
-                            <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-BC4C9DE6-BE30-459B-B2E8-31BE797DCEA0-0-1545556270.gif" alt="Nightmare #12" class="img thumbnail image left" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-29EC2F30-9A51-48A0-A158-5C577F4E26B4-0-1483530749.gif" alt="3D Illusion" class="img thumbnail image bottom" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-9C7B4694-38AD-4821-89D3-2C63D4C29360-0-1473970922.gif" alt="Nightmare #2" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-BC4C9DE6-BE30-459B-B2E8-31BE797DCEA0-0-1545556270.gif" alt="Nightmare #12" class="img thumbnail image left" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-29EC2F30-9A51-48A0-A158-5C577F4E26B4-0-1483530749.gif" alt="3D Illusion" class="img thumbnail image bottom" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="https://1b-f.s3.eu-west-1.amazonaws.com/a/45609-9C7B4694-38AD-4821-89D3-2C63D4C29360-0-1473970922.gif" alt="Nightmare #2" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
                         </div>
                         <p>
                             Retrouvez plus de gifs sur ma page <a href="https://folioscope.co/daminator4113" target="_blank" class="btn-link folioscope"><img class="img-svg" style="height: 30px;" src="https://folioscope.co/assets/logo-a0701ce2c1256d35ae530dd4d4fc2a2b1d9a1308d84c76dce80e4a23acddf8aa.png" alt="Folioscope.co">Folioscope.co</a>
@@ -819,30 +819,30 @@
                         <h3 id="sculptures">Sculptures</h3>
                         <p>Sculptures réalisées sur de l'argile</p>
                         <div class="image-group image bottom">
-                            <img src="images/creations/sculptures/dragon1.jpg" alt="dragon1" class="img image left" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="images/creations/sculptures/dragon3.jpg" alt="dragon3" class="img" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="images/creations/sculptures/dragon2.jpg" alt="dragon2" class="img image right" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/dragon1.webp" data-full="images/creations/sculptures/dragon1.jpg" alt="dragon1" class="img image left" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/dragon3.webp" data-full="images/creations/sculptures/dragon3.jpg" alt="dragon3" class="img" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/dragon2.webp" data-full="images/creations/sculptures/dragon2.jpg" alt="dragon2" class="img image right" data-group="1" style="height:100%;max-width:500px;">
                         </div>
                         <div class="image-group image bottom">
-                            <img src="images/creations/sculptures/ghost.jpg" alt="ghost" class="img thumbnail" data-group="1" style="height:100%;">
-                            <img src="images/creations/sculptures/main.jpg" alt="main" class="img thumbnail" data-group="1" style="height:100%;">
-                            <img src="images/creations/sculptures/serpent.jpg" alt="serpent" class="img thumbnail" data-group="1" style="height:100%;">
+                            <img loading="lazy" src="images/creations/sculptures/ghost.webp" data-full="images/creations/sculptures/ghost.jpg" alt="ghost" class="img thumbnail" data-group="1" style="height:100%;">
+                            <img loading="lazy" src="images/creations/sculptures/main.webp" data-full="images/creations/sculptures/main.jpg" alt="main" class="img thumbnail" data-group="1" style="height:100%;">
+                            <img loading="lazy" src="images/creations/sculptures/serpent.webp" data-full="images/creations/sculptures/serpent.jpg" alt="serpent" class="img thumbnail" data-group="1" style="height:100%;">
                         </div>
                         <p>Sculptures réalisées sur pâte Fimo</p>
                         <div class="image-group">
-                            <img src="images/creations/sculptures/monstre1.jpg" alt="monstre1" class="img thumbnail image left" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="images/creations/sculptures/monstre2.jpg" alt="monstre2" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/monstre1.webp" data-full="images/creations/sculptures/monstre1.jpg" alt="monstre1" class="img thumbnail image left" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/monstre2.webp" data-full="images/creations/sculptures/monstre2.jpg" alt="monstre2" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
                         </div>
                         <div class="image-group">
-                            <img src="images/creations/sculptures/poisson1.jpg" alt="poisson1" class="img thumbnail image left" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="images/creations/sculptures/poisson2.jpg" alt="poisson2" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
-                            <img src="images/creations/sculptures/poisson3.jpg" alt="poisson3" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/poisson1.webp" data-full="images/creations/sculptures/poisson1.jpg" alt="poisson1" class="img thumbnail image left" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/poisson2.webp" data-full="images/creations/sculptures/poisson2.jpg" alt="poisson2" class="img thumbnail" data-group="1" style="height:100%;max-width:500px;">
+                            <img loading="lazy" src="images/creations/sculptures/poisson3.webp" data-full="images/creations/sculptures/poisson3.jpg" alt="poisson3" class="img thumbnail image right" data-group="1" style="height:100%;max-width:500px;">
                         </div>
                         <div class="image-group">
-                            <img src="images/creations/sculptures/montre1.jpg" alt="montre1" class="img thumbnail image left" data-group="1" style="height:100%;">
-                            <img src="images/creations/sculptures/montre2.jpg" alt="montre2" class="img thumbnail image right" data-group="1" style="height:100%;">
+                            <img loading="lazy" src="images/creations/sculptures/montre1.webp" data-full="images/creations/sculptures/montre1.jpg" alt="montre1" class="img thumbnail image left" data-group="1" style="height:100%;">
+                            <img loading="lazy" src="images/creations/sculptures/montre2.webp" data-full="images/creations/sculptures/montre2.jpg" alt="montre2" class="img thumbnail image right" data-group="1" style="height:100%;">
                         </div>
-                        <img src="images/creations/sculptures/kraken.jpg" alt="kraken" data-width="30" class="img manual-resize image bottom" data-group="1">
+                        <img loading="lazy" src="images/creations/sculptures/kraken.webp" data-full="images/creations/sculptures/kraken.jpg" alt="kraken" data-width="30" class="img manual-resize image bottom" data-group="1">
 
                         <!-- Minecraft -->
                         <h3 id="minecraft">Minecraft</h3>
@@ -850,7 +850,7 @@
                         <div class="project">
                             <!-- Chest Room -->
                             <div class="creation">
-                                <img src="images/creations/minecraft/map_thumbnail.png" alt="map thumbnail" class="img thumbnail image left" style="width:80%;max-height:fit-content;max-width:fit-content;margin:20px auto;">
+                                <img loading="lazy" src="images/creations/minecraft/map_thumbnail.webp" data-full="images/creations/minecraft/map_thumbnail.png" alt="map thumbnail" class="img thumbnail image left" style="width:100%;max-width:fit-content;margin:20px auto;object-fit:cover;flex:0 1 calc(100% - 10px);">
                                 <div>
                                     <p>
                                         <a href="https://www.minecraftmaps.com/30690-chest-room" target="_blank" class="btn-link btn-anim gamejolt">▶ Chest Room</a>
@@ -864,7 +864,7 @@
 
                             <!-- Zero -->
                             <div class="creation">
-                                <img src="https://minecraft.fr/forum/attachments/2016-06-15_18-12-26-png.65732" alt="map thumbnail" class="img thumbnail image right" style="width:80%;max-height:100%;max-width:50%;margin:20px auto;">
+                                <img loading="lazy" src="https://minecraft.fr/forum/attachments/2016-06-15_18-12-26-png.65732" alt="map thumbnail" class="img thumbnail image right" style="width:50%;max-width:fit-content;margin:20px auto;object-fit:cover;flex:0 1 calc(100% - 10px);">
                                 <div>
                                     <p>
                                         <a href="https://minecraft.fr/forum/threads/1-10-zero.186482" target="_blank" class="btn-link btn-anim gamejolt">▶ Zero</a>
@@ -890,12 +890,12 @@
                     Votre navigateur ne supporte pas la vidéo HTML5.
                 </video>
                 -->
-                <img src="images/video_bg.gif" alt="background video" class="background-video">
+                <img loading="lazy" src="images/video_bg.gif" alt="background video" class="background-video">
 
                 <!-- Contenu au premier plan -->
                 <div class="profile-overlay">
                     <div class="profile-container">
-                        <img src="images/profil_picture.gif" alt="Photo de profil" data-width="25" class="pp manual-resize image right" style="border-radius: 50%;">
+                        <img loading="lazy" src="images/profil_picture.gif" alt="Photo de profil" data-width="25" class="pp manual-resize image right" style="border-radius: 50%;">
 
                         <div class="profile-content">
                             <h1 class="anim">Mon Profil</h1>
