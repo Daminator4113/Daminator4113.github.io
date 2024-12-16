@@ -398,7 +398,7 @@
                                     Ensuite, on a découpé chaque zone pour organiser notre village<br>
                                     <img loading="lazy" src="images/projects/the_stolen_artifact/map.webp" data-full="images/projects/the_stolen_artifact/map.png" alt="village organisation" data-width="40" class="img manual-resize image bottom">
                                     <br>
-                                    Et pendant que mon coéquipier s'occupait principalement de la partie technique, je m'affairais sur la partie Build du village ainsi que sur le Resource Pack, avec notamment la modélisation des différents dieux du jeu.<br>
+                                    Et pendant que mon coéquipier s'occupait principalement de la partie technique, je m'affairais sur la partie Build du village ainsi que sur le <a href="https://fr.minecraft.wiki/w/Pack_de_ressources" target="_blank">Resource Pack</a>, avec notamment la modélisation des différents dieux du jeu.<br>
                                     <img loading="lazy" src="images/projects/the_stolen_artifact/gods.png" alt="gods" data-width="30" class="img manual-resize image bottom">
                                     Quand le build fut fini, je me suis également mis sur la programmation des différentes features, notamment le système de téléportation par statue, ou encore l'affichage des textes animés. <i>(la liste est assez floue étant donné qu'on a travaillé ensemble sur le projet entier)</i><br><br>
                                     On aura quand même fini dans les temps, mais sans avoir réellement pu faire tester la map en amont, et cela nous aurait permis de nous rendre compte qu'une étape dans le jeu était trop longue.
@@ -764,11 +764,29 @@
                             <button class="toggle-details"><h3 style="margin: 0">Mécaniques</h3></button>
                             <div class="details">
                                 <p style="text-align: justify;">
-                                    Empty<br>
-                                    <img loading="lazy" src="images/template1.webp" data-full="images/template1.png" alt="template" data-width="40" class="img manual-resize image bottom">
+                                    BUT DU JEU :<br>
+                                    On incarne un nouvel employé dans un laboratoire de développement d'outils d'exploration spatiale. Notre rôle sera de programmer des fonctions de base pour un robot explorateur martien.<br>
                                     <br>
-                                    Empty<br>
-                                    <img loading="lazy" src="images/template2.webp" data-full="images/template2.png" alt="template" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    MÉCANIQUES DE JEU :<br>
+                                    Une première étape est la vérification de la présence des modules sur le Rover. Dans le scénario, un ordinateur va vérifier la présence de ces modules, et certains seront manquants. Ce sera au joueur d'aller dans la salle d'assemblage du Rover pour y placer les modules manquants.
+                                    <br>
+                                    <img loading="lazy" src="images/projects/automatisation/1.png" alt="modules" data-width="40" class="img manual-resize image bottom">
+                                    <br><br>
+                                    Et pour finir, dans le scénario, le joueur doit développer un programme permettant au Rover d'effectuer des actions automatiquement, sans aide à distance.
+                                    <br>
+                                    - Pour cela, il dispose de différents items correspondant à une action<br>
+                                    <img loading="lazy" src="images/projects/automatisation/2.png" alt="tuto action" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <br>
+                                    - Pour chaque fonction, il devra ensuite disposer les actions nécessaires dans l'ordre demandé afin d'accomplir les différentes tâches. Ces blocs d'actions seront lus les uns après les autres dans un sens de lecture défini.
+                                    <br>
+                                    <img loading="lazy" src="images/projects/automatisation/3.gif" alt="sens de lecture" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <br>
+                                    - En plus des actions spécifiques au jeu (faire avancer le Rover, le faire tourner, etc.), le joueur va avoir accès à des fonctions basiques de programmation, telles que les "boucles" et les conditions "si" et "sinon", et un journal de log permettant de suivre sa progression et de l'aider sur ses erreurs.
+                                    <br>
+                                    <img loading="lazy" src="images/projects/automatisation/4.png" alt="fonction" data-width="40" class="img manual-resize image left" style="margin: 20px;">
+                                    <img loading="lazy" src="images/projects/automatisation/5.png" alt="logs" data-width="25" class="img manual-resize image left" style="margin: 20px;">
+                                    <br>
+
                                 </p>
                             </div>
                             
@@ -776,7 +794,18 @@
                             <button class="toggle-details"><h3 style="margin: 0">Conception</h3></button>
                             <div class="details">
                                 <p style="text-align: justify;">
-                                    Empty
+                                    Dans la partie <a href="https://fr.minecraft.wiki/w/Pack_de_ressources" target="_blank">Resource Pack</a>, on a eu quelques modèles à faire, notamment le Rover ou encore les icônes des blocs de programmation.<br>
+                                    <br>
+                                    Pour la partie technique, nous avons utilisé le système de programmation intégré dans Minecraft, à savoir les fonctions avec les <a href="https://fr.minecraft.wiki/w/Pack_de_donn%C3%A9es" target="_blank">Data Pack</a>.<br>
+                                    <br>
+                                    Pour toute la partie scénario, j'ai fait un système permettant d'enregistrer les déplacements du joueur pour ensuite créer des chemins à faire emprunter au NPC lors de la visite.<br>
+                                    Les joueurs devaient seulement suivre le NPC et se rendre aux différents checkpoints pour passer à la suite de l'histoire.<br>
+                                    <br>
+                                    Pour la partie programmation, on s'est inspiré de Scratch comme logique de programmation pour faire un ensemble de blocs d'actions à mettre les uns à la suite des autres. Et on a reproduit ça dans Minecraft en utilisant l'inventaire d'un coffre comme interface, et les items comme blocs imbriquables.<br>
+                                    <img loading="lazy" src="images/projects/automatisation/6.png" alt="modules" data-width="40" class="img manual-resize image bottom">
+                                    <br>
+                                    Pour le test final du Rover, on a également fait en sorte de positionner la hauteur de chaque roue indépendamment les unes des autres, et de régler l'orientation du Rover, de telle sorte que celui-ci puisse monter et descendre des blocs sans passer au travers.
+
                                 </p>
                             </div>
                         </div>
